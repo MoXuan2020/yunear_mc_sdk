@@ -4,7 +4,7 @@ class Event(object):
         self.callback = callback
         self.mod = None
 
-    def __call__(self, args):
+    def __call__(self, args=None):
         self.callback(self.mod, args)
 
     def bind_mod(self, mod):
