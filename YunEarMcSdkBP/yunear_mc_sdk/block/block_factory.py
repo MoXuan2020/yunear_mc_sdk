@@ -1,0 +1,2059 @@
+from yunear_mc_sdk.block.acacia_button import AcaciaButton
+from yunear_mc_sdk.block.acacia_door import AcaciaDoor
+from yunear_mc_sdk.block.acacia_fence import AcaciaFence
+from yunear_mc_sdk.block.acacia_fence_gate import AcaciaFenceGate
+from yunear_mc_sdk.block.acacia_hanging_sign import AcaciaHangingSign
+from yunear_mc_sdk.block.acacia_log import AcaciaLog
+from yunear_mc_sdk.block.acacia_planks import AcaciaPlanks
+from yunear_mc_sdk.block.acacia_pressure_plate import AcaciaPressurePlate
+from yunear_mc_sdk.block.acacia_stairs import AcaciaStairs
+from yunear_mc_sdk.block.acacia_standing_sign import AcaciaStandingSign
+from yunear_mc_sdk.block.acacia_trapdoor import AcaciaTrapdoor
+from yunear_mc_sdk.block.acacia_wall_sign import AcaciaWallSign
+from yunear_mc_sdk.block.activator_rail import ActivatorRail
+from yunear_mc_sdk.block.air import Air
+from yunear_mc_sdk.block.allow import Allow
+from yunear_mc_sdk.block.amethyst_block import AmethystBlock
+from yunear_mc_sdk.block.amethyst_cluster import AmethystCluster
+from yunear_mc_sdk.block.ancient_debris import AncientDebris
+from yunear_mc_sdk.block.andesite import Andesite
+from yunear_mc_sdk.block.andesite_stairs import AndesiteStairs
+from yunear_mc_sdk.block.anvil import Anvil
+from yunear_mc_sdk.block.azalea import Azalea
+from yunear_mc_sdk.block.azalea_leaves import AzaleaLeaves
+from yunear_mc_sdk.block.azalea_leaves_flowered import AzaleaLeavesFlowered
+from yunear_mc_sdk.block.bamboo import Bamboo
+from yunear_mc_sdk.block.bamboo_block import BambooBlock
+from yunear_mc_sdk.block.bamboo_button import BambooButton
+from yunear_mc_sdk.block.bamboo_door import BambooDoor
+from yunear_mc_sdk.block.bamboo_double_slab import BambooDoubleSlab
+from yunear_mc_sdk.block.bamboo_fence import BambooFence
+from yunear_mc_sdk.block.bamboo_fence_gate import BambooFenceGate
+from yunear_mc_sdk.block.bamboo_hanging_sign import BambooHangingSign
+from yunear_mc_sdk.block.bamboo_mosaic import BambooMosaic
+from yunear_mc_sdk.block.bamboo_mosaic_double_slab import BambooMosaicDoubleSlab
+from yunear_mc_sdk.block.bamboo_mosaic_slab import BambooMosaicSlab
+from yunear_mc_sdk.block.bamboo_mosaic_stairs import BambooMosaicStairs
+from yunear_mc_sdk.block.bamboo_planks import BambooPlanks
+from yunear_mc_sdk.block.bamboo_pressure_plate import BambooPressurePlate
+from yunear_mc_sdk.block.bamboo_sapling import BambooSapling
+from yunear_mc_sdk.block.bamboo_slab import BambooSlab
+from yunear_mc_sdk.block.bamboo_stairs import BambooStairs
+from yunear_mc_sdk.block.bamboo_standing_sign import BambooStandingSign
+from yunear_mc_sdk.block.bamboo_trapdoor import BambooTrapdoor
+from yunear_mc_sdk.block.bamboo_wall_sign import BambooWallSign
+from yunear_mc_sdk.block.barrel import Barrel
+from yunear_mc_sdk.block.barrier import Barrier
+from yunear_mc_sdk.block.basalt import Basalt
+from yunear_mc_sdk.block.beacon import Beacon
+from yunear_mc_sdk.block.bed import Bed
+from yunear_mc_sdk.block.bedrock import Bedrock
+from yunear_mc_sdk.block.bee_nest import BeeNest
+from yunear_mc_sdk.block.beehive import Beehive
+from yunear_mc_sdk.block.beetroot import Beetroot
+from yunear_mc_sdk.block.bell import Bell
+from yunear_mc_sdk.block.big_dripleaf import BigDripleaf
+from yunear_mc_sdk.block.birch_button import BirchButton
+from yunear_mc_sdk.block.birch_door import BirchDoor
+from yunear_mc_sdk.block.birch_fence import BirchFence
+from yunear_mc_sdk.block.birch_fence_gate import BirchFenceGate
+from yunear_mc_sdk.block.birch_hanging_sign import BirchHangingSign
+from yunear_mc_sdk.block.birch_log import BirchLog
+from yunear_mc_sdk.block.birch_planks import BirchPlanks
+from yunear_mc_sdk.block.birch_pressure_plate import BirchPressurePlate
+from yunear_mc_sdk.block.birch_stairs import BirchStairs
+from yunear_mc_sdk.block.birch_standing_sign import BirchStandingSign
+from yunear_mc_sdk.block.birch_trapdoor import BirchTrapdoor
+from yunear_mc_sdk.block.birch_wall_sign import BirchWallSign
+from yunear_mc_sdk.block.black_candle import BlackCandle
+from yunear_mc_sdk.block.black_candle_cake import BlackCandleCake
+from yunear_mc_sdk.block.black_carpet import BlackCarpet
+from yunear_mc_sdk.block.black_concrete import BlackConcrete
+from yunear_mc_sdk.block.black_concrete_powder import BlackConcretePowder
+from yunear_mc_sdk.block.black_glazed_terracotta import BlackGlazedTerracotta
+from yunear_mc_sdk.block.black_shulker_box import BlackShulkerBox
+from yunear_mc_sdk.block.black_stained_glass import BlackStainedGlass
+from yunear_mc_sdk.block.black_stained_glass_pane import BlackStainedGlassPane
+from yunear_mc_sdk.block.black_terracotta import BlackTerracotta
+from yunear_mc_sdk.block.black_wool import BlackWool
+from yunear_mc_sdk.block.blackstone import Blackstone
+from yunear_mc_sdk.block.blackstone_double_slab import BlackstoneDoubleSlab
+from yunear_mc_sdk.block.blackstone_slab import BlackstoneSlab
+from yunear_mc_sdk.block.blackstone_stairs import BlackstoneStairs
+from yunear_mc_sdk.block.blackstone_wall import BlackstoneWall
+from yunear_mc_sdk.block.blast_furnace import BlastFurnace
+from yunear_mc_sdk.block.blue_candle import BlueCandle
+from yunear_mc_sdk.block.blue_candle_cake import BlueCandleCake
+from yunear_mc_sdk.block.blue_carpet import BlueCarpet
+from yunear_mc_sdk.block.blue_concrete import BlueConcrete
+from yunear_mc_sdk.block.blue_concrete_powder import BlueConcretePowder
+from yunear_mc_sdk.block.blue_glazed_terracotta import BlueGlazedTerracotta
+from yunear_mc_sdk.block.blue_ice import BlueIce
+from yunear_mc_sdk.block.blue_shulker_box import BlueShulkerBox
+from yunear_mc_sdk.block.blue_stained_glass import BlueStainedGlass
+from yunear_mc_sdk.block.blue_stained_glass_pane import BlueStainedGlassPane
+from yunear_mc_sdk.block.blue_terracotta import BlueTerracotta
+from yunear_mc_sdk.block.blue_wool import BlueWool
+from yunear_mc_sdk.block.bone_block import BoneBlock
+from yunear_mc_sdk.block.bookshelf import Bookshelf
+from yunear_mc_sdk.block.border_block import BorderBlock
+from yunear_mc_sdk.block.brain_coral import BrainCoral
+from yunear_mc_sdk.block.brewing_stand import BrewingStand
+from yunear_mc_sdk.block.brick_block import BrickBlock
+from yunear_mc_sdk.block.brick_stairs import BrickStairs
+from yunear_mc_sdk.block.brown_candle import BrownCandle
+from yunear_mc_sdk.block.brown_candle_cake import BrownCandleCake
+from yunear_mc_sdk.block.brown_carpet import BrownCarpet
+from yunear_mc_sdk.block.brown_concrete import BrownConcrete
+from yunear_mc_sdk.block.brown_concrete_powder import BrownConcretePowder
+from yunear_mc_sdk.block.brown_glazed_terracotta import BrownGlazedTerracotta
+from yunear_mc_sdk.block.brown_mushroom import BrownMushroom
+from yunear_mc_sdk.block.brown_mushroom_block import BrownMushroomBlock
+from yunear_mc_sdk.block.brown_shulker_box import BrownShulkerBox
+from yunear_mc_sdk.block.brown_stained_glass import BrownStainedGlass
+from yunear_mc_sdk.block.brown_stained_glass_pane import BrownStainedGlassPane
+from yunear_mc_sdk.block.brown_terracotta import BrownTerracotta
+from yunear_mc_sdk.block.brown_wool import BrownWool
+from yunear_mc_sdk.block.bubble_column import BubbleColumn
+from yunear_mc_sdk.block.bubble_coral import BubbleCoral
+from yunear_mc_sdk.block.budding_amethyst import BuddingAmethyst
+from yunear_mc_sdk.block.cactus import Cactus
+from yunear_mc_sdk.block.cake import Cake
+from yunear_mc_sdk.block.calcite import Calcite
+from yunear_mc_sdk.block.calibrated_sculk_sensor import CalibratedSculkSensor
+from yunear_mc_sdk.block.camera import Camera
+from yunear_mc_sdk.block.campfire import Campfire
+from yunear_mc_sdk.block.candle import Candle
+from yunear_mc_sdk.block.candle_cake import CandleCake
+from yunear_mc_sdk.block.carrots import Carrots
+from yunear_mc_sdk.block.cartography_table import CartographyTable
+from yunear_mc_sdk.block.carved_pumpkin import CarvedPumpkin
+from yunear_mc_sdk.block.cauldron import Cauldron
+from yunear_mc_sdk.block.cave_vines import CaveVines
+from yunear_mc_sdk.block.cave_vines_body_with_berries import CaveVinesBodyWithBerries
+from yunear_mc_sdk.block.cave_vines_head_with_berries import CaveVinesHeadWithBerries
+from yunear_mc_sdk.block.chain import Chain
+from yunear_mc_sdk.block.chain_command_block import ChainCommandBlock
+from yunear_mc_sdk.block.chemical_heat import ChemicalHeat
+from yunear_mc_sdk.block.chemistry_table import ChemistryTable
+from yunear_mc_sdk.block.cherry_button import CherryButton
+from yunear_mc_sdk.block.cherry_door import CherryDoor
+from yunear_mc_sdk.block.cherry_double_slab import CherryDoubleSlab
+from yunear_mc_sdk.block.cherry_fence import CherryFence
+from yunear_mc_sdk.block.cherry_fence_gate import CherryFenceGate
+from yunear_mc_sdk.block.cherry_hanging_sign import CherryHangingSign
+from yunear_mc_sdk.block.cherry_leaves import CherryLeaves
+from yunear_mc_sdk.block.cherry_log import CherryLog
+from yunear_mc_sdk.block.cherry_planks import CherryPlanks
+from yunear_mc_sdk.block.cherry_pressure_plate import CherryPressurePlate
+from yunear_mc_sdk.block.cherry_sapling import CherrySapling
+from yunear_mc_sdk.block.cherry_slab import CherrySlab
+from yunear_mc_sdk.block.cherry_stairs import CherryStairs
+from yunear_mc_sdk.block.cherry_standing_sign import CherryStandingSign
+from yunear_mc_sdk.block.cherry_trapdoor import CherryTrapdoor
+from yunear_mc_sdk.block.cherry_wall_sign import CherryWallSign
+from yunear_mc_sdk.block.cherry_wood import CherryWood
+from yunear_mc_sdk.block.chest import Chest
+from yunear_mc_sdk.block.chiseled_bookshelf import ChiseledBookshelf
+from yunear_mc_sdk.block.chiseled_copper import ChiseledCopper
+from yunear_mc_sdk.block.chiseled_deepslate import ChiseledDeepslate
+from yunear_mc_sdk.block.chiseled_nether_bricks import ChiseledNetherBricks
+from yunear_mc_sdk.block.chiseled_polished_blackstone import ChiseledPolishedBlackstone
+from yunear_mc_sdk.block.chiseled_tuff import ChiseledTuff
+from yunear_mc_sdk.block.chiseled_tuff_bricks import ChiseledTuffBricks
+from yunear_mc_sdk.block.chorus_flower import ChorusFlower
+from yunear_mc_sdk.block.chorus_plant import ChorusPlant
+from yunear_mc_sdk.block.clay import Clay
+from yunear_mc_sdk.block.client_request_placeholder_block import ClientRequestPlaceholderBlock
+from yunear_mc_sdk.block.coal_block import CoalBlock
+from yunear_mc_sdk.block.coal_ore import CoalOre
+from yunear_mc_sdk.block.cobbled_deepslate import CobbledDeepslate
+from yunear_mc_sdk.block.cobbled_deepslate_double_slab import CobbledDeepslateDoubleSlab
+from yunear_mc_sdk.block.cobbled_deepslate_slab import CobbledDeepslateSlab
+from yunear_mc_sdk.block.cobbled_deepslate_stairs import CobbledDeepslateStairs
+from yunear_mc_sdk.block.cobbled_deepslate_wall import CobbledDeepslateWall
+from yunear_mc_sdk.block.cobblestone import Cobblestone
+from yunear_mc_sdk.block.cobblestone_wall import CobblestoneWall
+from yunear_mc_sdk.block.cocoa import Cocoa
+from yunear_mc_sdk.block.colored_torch_bp import ColoredTorchBp
+from yunear_mc_sdk.block.colored_torch_rg import ColoredTorchRg
+from yunear_mc_sdk.block.command_block import CommandBlock
+from yunear_mc_sdk.block.composter import Composter
+from yunear_mc_sdk.block.conduit import Conduit
+from yunear_mc_sdk.block.copper_block import CopperBlock
+from yunear_mc_sdk.block.copper_bulb import CopperBulb
+from yunear_mc_sdk.block.copper_door import CopperDoor
+from yunear_mc_sdk.block.copper_grate import CopperGrate
+from yunear_mc_sdk.block.copper_ore import CopperOre
+from yunear_mc_sdk.block.copper_trapdoor import CopperTrapdoor
+from yunear_mc_sdk.block.coral_block import CoralBlock
+from yunear_mc_sdk.block.coral_fan import CoralFan
+from yunear_mc_sdk.block.coral_fan_dead import CoralFanDead
+from yunear_mc_sdk.block.coral_fan_hang import CoralFanHang
+from yunear_mc_sdk.block.coral_fan_hang2 import CoralFanHang2
+from yunear_mc_sdk.block.coral_fan_hang3 import CoralFanHang3
+from yunear_mc_sdk.block.cracked_deepslate_bricks import CrackedDeepslateBricks
+from yunear_mc_sdk.block.cracked_deepslate_tiles import CrackedDeepslateTiles
+from yunear_mc_sdk.block.cracked_nether_bricks import CrackedNetherBricks
+from yunear_mc_sdk.block.cracked_polished_blackstone_bricks import CrackedPolishedBlackstoneBricks
+from yunear_mc_sdk.block.crafter import Crafter
+from yunear_mc_sdk.block.crafting_table import CraftingTable
+from yunear_mc_sdk.block.crimson_button import CrimsonButton
+from yunear_mc_sdk.block.crimson_door import CrimsonDoor
+from yunear_mc_sdk.block.crimson_double_slab import CrimsonDoubleSlab
+from yunear_mc_sdk.block.crimson_fence import CrimsonFence
+from yunear_mc_sdk.block.crimson_fence_gate import CrimsonFenceGate
+from yunear_mc_sdk.block.crimson_fungus import CrimsonFungus
+from yunear_mc_sdk.block.crimson_hanging_sign import CrimsonHangingSign
+from yunear_mc_sdk.block.crimson_hyphae import CrimsonHyphae
+from yunear_mc_sdk.block.crimson_nylium import CrimsonNylium
+from yunear_mc_sdk.block.crimson_planks import CrimsonPlanks
+from yunear_mc_sdk.block.crimson_pressure_plate import CrimsonPressurePlate
+from yunear_mc_sdk.block.crimson_roots import CrimsonRoots
+from yunear_mc_sdk.block.crimson_slab import CrimsonSlab
+from yunear_mc_sdk.block.crimson_stairs import CrimsonStairs
+from yunear_mc_sdk.block.crimson_standing_sign import CrimsonStandingSign
+from yunear_mc_sdk.block.crimson_stem import CrimsonStem
+from yunear_mc_sdk.block.crimson_trapdoor import CrimsonTrapdoor
+from yunear_mc_sdk.block.crimson_wall_sign import CrimsonWallSign
+from yunear_mc_sdk.block.crying_obsidian import CryingObsidian
+from yunear_mc_sdk.block.cut_copper import CutCopper
+from yunear_mc_sdk.block.cut_copper_slab import CutCopperSlab
+from yunear_mc_sdk.block.cut_copper_stairs import CutCopperStairs
+from yunear_mc_sdk.block.cyan_candle import CyanCandle
+from yunear_mc_sdk.block.cyan_candle_cake import CyanCandleCake
+from yunear_mc_sdk.block.cyan_carpet import CyanCarpet
+from yunear_mc_sdk.block.cyan_concrete import CyanConcrete
+from yunear_mc_sdk.block.cyan_concrete_powder import CyanConcretePowder
+from yunear_mc_sdk.block.cyan_glazed_terracotta import CyanGlazedTerracotta
+from yunear_mc_sdk.block.cyan_shulker_box import CyanShulkerBox
+from yunear_mc_sdk.block.cyan_stained_glass import CyanStainedGlass
+from yunear_mc_sdk.block.cyan_stained_glass_pane import CyanStainedGlassPane
+from yunear_mc_sdk.block.cyan_terracotta import CyanTerracotta
+from yunear_mc_sdk.block.cyan_wool import CyanWool
+from yunear_mc_sdk.block.dark_oak_button import DarkOakButton
+from yunear_mc_sdk.block.dark_oak_door import DarkOakDoor
+from yunear_mc_sdk.block.dark_oak_fence import DarkOakFence
+from yunear_mc_sdk.block.dark_oak_fence_gate import DarkOakFenceGate
+from yunear_mc_sdk.block.dark_oak_hanging_sign import DarkOakHangingSign
+from yunear_mc_sdk.block.dark_oak_log import DarkOakLog
+from yunear_mc_sdk.block.dark_oak_planks import DarkOakPlanks
+from yunear_mc_sdk.block.dark_oak_pressure_plate import DarkOakPressurePlate
+from yunear_mc_sdk.block.dark_oak_stairs import DarkOakStairs
+from yunear_mc_sdk.block.dark_oak_trapdoor import DarkOakTrapdoor
+from yunear_mc_sdk.block.dark_prismarine_stairs import DarkPrismarineStairs
+from yunear_mc_sdk.block.darkoak_standing_sign import DarkoakStandingSign
+from yunear_mc_sdk.block.darkoak_wall_sign import DarkoakWallSign
+from yunear_mc_sdk.block.daylight_detector import DaylightDetector
+from yunear_mc_sdk.block.daylight_detector_inverted import DaylightDetectorInverted
+from yunear_mc_sdk.block.dead_brain_coral import DeadBrainCoral
+from yunear_mc_sdk.block.dead_bubble_coral import DeadBubbleCoral
+from yunear_mc_sdk.block.dead_fire_coral import DeadFireCoral
+from yunear_mc_sdk.block.dead_horn_coral import DeadHornCoral
+from yunear_mc_sdk.block.dead_tube_coral import DeadTubeCoral
+from yunear_mc_sdk.block.deadbush import Deadbush
+from yunear_mc_sdk.block.decorated_pot import DecoratedPot
+from yunear_mc_sdk.block.deepslate import Deepslate
+from yunear_mc_sdk.block.deepslate_brick_double_slab import DeepslateBrickDoubleSlab
+from yunear_mc_sdk.block.deepslate_brick_slab import DeepslateBrickSlab
+from yunear_mc_sdk.block.deepslate_brick_stairs import DeepslateBrickStairs
+from yunear_mc_sdk.block.deepslate_brick_wall import DeepslateBrickWall
+from yunear_mc_sdk.block.deepslate_bricks import DeepslateBricks
+from yunear_mc_sdk.block.deepslate_coal_ore import DeepslateCoalOre
+from yunear_mc_sdk.block.deepslate_copper_ore import DeepslateCopperOre
+from yunear_mc_sdk.block.deepslate_diamond_ore import DeepslateDiamondOre
+from yunear_mc_sdk.block.deepslate_emerald_ore import DeepslateEmeraldOre
+from yunear_mc_sdk.block.deepslate_gold_ore import DeepslateGoldOre
+from yunear_mc_sdk.block.deepslate_iron_ore import DeepslateIronOre
+from yunear_mc_sdk.block.deepslate_lapis_ore import DeepslateLapisOre
+from yunear_mc_sdk.block.deepslate_redstone_ore import DeepslateRedstoneOre
+from yunear_mc_sdk.block.deepslate_tile_double_slab import DeepslateTileDoubleSlab
+from yunear_mc_sdk.block.deepslate_tile_slab import DeepslateTileSlab
+from yunear_mc_sdk.block.deepslate_tile_stairs import DeepslateTileStairs
+from yunear_mc_sdk.block.deepslate_tile_wall import DeepslateTileWall
+from yunear_mc_sdk.block.deepslate_tiles import DeepslateTiles
+from yunear_mc_sdk.block.deny import Deny
+from yunear_mc_sdk.block.detector_rail import DetectorRail
+from yunear_mc_sdk.block.diamond_block import DiamondBlock
+from yunear_mc_sdk.block.diamond_ore import DiamondOre
+from yunear_mc_sdk.block.diorite import Diorite
+from yunear_mc_sdk.block.diorite_stairs import DioriteStairs
+from yunear_mc_sdk.block.dirt import Dirt
+from yunear_mc_sdk.block.dirt_with_roots import DirtWithRoots
+from yunear_mc_sdk.block.dispenser import Dispenser
+from yunear_mc_sdk.block.double_cut_copper_slab import DoubleCutCopperSlab
+from yunear_mc_sdk.block.double_plant import DoublePlant
+from yunear_mc_sdk.block.double_stone_block_slab import DoubleStoneBlockSlab
+from yunear_mc_sdk.block.double_stone_block_slab2 import DoubleStoneBlockSlab2
+from yunear_mc_sdk.block.double_stone_block_slab3 import DoubleStoneBlockSlab3
+from yunear_mc_sdk.block.double_stone_block_slab4 import DoubleStoneBlockSlab4
+from yunear_mc_sdk.block.double_wooden_slab import DoubleWoodenSlab
+from yunear_mc_sdk.block.dragon_egg import DragonEgg
+from yunear_mc_sdk.block.dried_kelp_block import DriedKelpBlock
+from yunear_mc_sdk.block.dripstone_block import DripstoneBlock
+from yunear_mc_sdk.block.dropper import Dropper
+from yunear_mc_sdk.block.element_0 import Element0
+from yunear_mc_sdk.block.element_1 import Element1
+from yunear_mc_sdk.block.element_10 import Element10
+from yunear_mc_sdk.block.element_100 import Element100
+from yunear_mc_sdk.block.element_101 import Element101
+from yunear_mc_sdk.block.element_102 import Element102
+from yunear_mc_sdk.block.element_103 import Element103
+from yunear_mc_sdk.block.element_104 import Element104
+from yunear_mc_sdk.block.element_105 import Element105
+from yunear_mc_sdk.block.element_106 import Element106
+from yunear_mc_sdk.block.element_107 import Element107
+from yunear_mc_sdk.block.element_108 import Element108
+from yunear_mc_sdk.block.element_109 import Element109
+from yunear_mc_sdk.block.element_11 import Element11
+from yunear_mc_sdk.block.element_110 import Element110
+from yunear_mc_sdk.block.element_111 import Element111
+from yunear_mc_sdk.block.element_112 import Element112
+from yunear_mc_sdk.block.element_113 import Element113
+from yunear_mc_sdk.block.element_114 import Element114
+from yunear_mc_sdk.block.element_115 import Element115
+from yunear_mc_sdk.block.element_116 import Element116
+from yunear_mc_sdk.block.element_117 import Element117
+from yunear_mc_sdk.block.element_118 import Element118
+from yunear_mc_sdk.block.element_12 import Element12
+from yunear_mc_sdk.block.element_13 import Element13
+from yunear_mc_sdk.block.element_14 import Element14
+from yunear_mc_sdk.block.element_15 import Element15
+from yunear_mc_sdk.block.element_16 import Element16
+from yunear_mc_sdk.block.element_17 import Element17
+from yunear_mc_sdk.block.element_18 import Element18
+from yunear_mc_sdk.block.element_19 import Element19
+from yunear_mc_sdk.block.element_2 import Element2
+from yunear_mc_sdk.block.element_20 import Element20
+from yunear_mc_sdk.block.element_21 import Element21
+from yunear_mc_sdk.block.element_22 import Element22
+from yunear_mc_sdk.block.element_23 import Element23
+from yunear_mc_sdk.block.element_24 import Element24
+from yunear_mc_sdk.block.element_25 import Element25
+from yunear_mc_sdk.block.element_26 import Element26
+from yunear_mc_sdk.block.element_27 import Element27
+from yunear_mc_sdk.block.element_28 import Element28
+from yunear_mc_sdk.block.element_29 import Element29
+from yunear_mc_sdk.block.element_3 import Element3
+from yunear_mc_sdk.block.element_30 import Element30
+from yunear_mc_sdk.block.element_31 import Element31
+from yunear_mc_sdk.block.element_32 import Element32
+from yunear_mc_sdk.block.element_33 import Element33
+from yunear_mc_sdk.block.element_34 import Element34
+from yunear_mc_sdk.block.element_35 import Element35
+from yunear_mc_sdk.block.element_36 import Element36
+from yunear_mc_sdk.block.element_37 import Element37
+from yunear_mc_sdk.block.element_38 import Element38
+from yunear_mc_sdk.block.element_39 import Element39
+from yunear_mc_sdk.block.element_4 import Element4
+from yunear_mc_sdk.block.element_40 import Element40
+from yunear_mc_sdk.block.element_41 import Element41
+from yunear_mc_sdk.block.element_42 import Element42
+from yunear_mc_sdk.block.element_43 import Element43
+from yunear_mc_sdk.block.element_44 import Element44
+from yunear_mc_sdk.block.element_45 import Element45
+from yunear_mc_sdk.block.element_46 import Element46
+from yunear_mc_sdk.block.element_47 import Element47
+from yunear_mc_sdk.block.element_48 import Element48
+from yunear_mc_sdk.block.element_49 import Element49
+from yunear_mc_sdk.block.element_5 import Element5
+from yunear_mc_sdk.block.element_50 import Element50
+from yunear_mc_sdk.block.element_51 import Element51
+from yunear_mc_sdk.block.element_52 import Element52
+from yunear_mc_sdk.block.element_53 import Element53
+from yunear_mc_sdk.block.element_54 import Element54
+from yunear_mc_sdk.block.element_55 import Element55
+from yunear_mc_sdk.block.element_56 import Element56
+from yunear_mc_sdk.block.element_57 import Element57
+from yunear_mc_sdk.block.element_58 import Element58
+from yunear_mc_sdk.block.element_59 import Element59
+from yunear_mc_sdk.block.element_6 import Element6
+from yunear_mc_sdk.block.element_60 import Element60
+from yunear_mc_sdk.block.element_61 import Element61
+from yunear_mc_sdk.block.element_62 import Element62
+from yunear_mc_sdk.block.element_63 import Element63
+from yunear_mc_sdk.block.element_64 import Element64
+from yunear_mc_sdk.block.element_65 import Element65
+from yunear_mc_sdk.block.element_66 import Element66
+from yunear_mc_sdk.block.element_67 import Element67
+from yunear_mc_sdk.block.element_68 import Element68
+from yunear_mc_sdk.block.element_69 import Element69
+from yunear_mc_sdk.block.element_7 import Element7
+from yunear_mc_sdk.block.element_70 import Element70
+from yunear_mc_sdk.block.element_71 import Element71
+from yunear_mc_sdk.block.element_72 import Element72
+from yunear_mc_sdk.block.element_73 import Element73
+from yunear_mc_sdk.block.element_74 import Element74
+from yunear_mc_sdk.block.element_75 import Element75
+from yunear_mc_sdk.block.element_76 import Element76
+from yunear_mc_sdk.block.element_77 import Element77
+from yunear_mc_sdk.block.element_78 import Element78
+from yunear_mc_sdk.block.element_79 import Element79
+from yunear_mc_sdk.block.element_8 import Element8
+from yunear_mc_sdk.block.element_80 import Element80
+from yunear_mc_sdk.block.element_81 import Element81
+from yunear_mc_sdk.block.element_82 import Element82
+from yunear_mc_sdk.block.element_83 import Element83
+from yunear_mc_sdk.block.element_84 import Element84
+from yunear_mc_sdk.block.element_85 import Element85
+from yunear_mc_sdk.block.element_86 import Element86
+from yunear_mc_sdk.block.element_87 import Element87
+from yunear_mc_sdk.block.element_88 import Element88
+from yunear_mc_sdk.block.element_89 import Element89
+from yunear_mc_sdk.block.element_9 import Element9
+from yunear_mc_sdk.block.element_90 import Element90
+from yunear_mc_sdk.block.element_91 import Element91
+from yunear_mc_sdk.block.element_92 import Element92
+from yunear_mc_sdk.block.element_93 import Element93
+from yunear_mc_sdk.block.element_94 import Element94
+from yunear_mc_sdk.block.element_95 import Element95
+from yunear_mc_sdk.block.element_96 import Element96
+from yunear_mc_sdk.block.element_97 import Element97
+from yunear_mc_sdk.block.element_98 import Element98
+from yunear_mc_sdk.block.element_99 import Element99
+from yunear_mc_sdk.block.emerald_block import EmeraldBlock
+from yunear_mc_sdk.block.emerald_ore import EmeraldOre
+from yunear_mc_sdk.block.enchanting_table import EnchantingTable
+from yunear_mc_sdk.block.end_brick_stairs import EndBrickStairs
+from yunear_mc_sdk.block.end_bricks import EndBricks
+from yunear_mc_sdk.block.end_gateway import EndGateway
+from yunear_mc_sdk.block.end_portal import EndPortal
+from yunear_mc_sdk.block.end_portal_frame import EndPortalFrame
+from yunear_mc_sdk.block.end_rod import EndRod
+from yunear_mc_sdk.block.end_stone import EndStone
+from yunear_mc_sdk.block.ender_chest import EnderChest
+from yunear_mc_sdk.block.exposed_chiseled_copper import ExposedChiseledCopper
+from yunear_mc_sdk.block.exposed_copper import ExposedCopper
+from yunear_mc_sdk.block.exposed_copper_bulb import ExposedCopperBulb
+from yunear_mc_sdk.block.exposed_copper_door import ExposedCopperDoor
+from yunear_mc_sdk.block.exposed_copper_grate import ExposedCopperGrate
+from yunear_mc_sdk.block.exposed_copper_trapdoor import ExposedCopperTrapdoor
+from yunear_mc_sdk.block.exposed_cut_copper import ExposedCutCopper
+from yunear_mc_sdk.block.exposed_cut_copper_slab import ExposedCutCopperSlab
+from yunear_mc_sdk.block.exposed_cut_copper_stairs import ExposedCutCopperStairs
+from yunear_mc_sdk.block.exposed_double_cut_copper_slab import ExposedDoubleCutCopperSlab
+from yunear_mc_sdk.block.farmland import Farmland
+from yunear_mc_sdk.block.fence_gate import FenceGate
+from yunear_mc_sdk.block.fire import Fire
+from yunear_mc_sdk.block.fire_coral import FireCoral
+from yunear_mc_sdk.block.fletching_table import FletchingTable
+from yunear_mc_sdk.block.flower_pot import FlowerPot
+from yunear_mc_sdk.block.flowering_azalea import FloweringAzalea
+from yunear_mc_sdk.block.flowing_lava import FlowingLava
+from yunear_mc_sdk.block.flowing_water import FlowingWater
+from yunear_mc_sdk.block.frame import Frame
+from yunear_mc_sdk.block.frog_spawn import FrogSpawn
+from yunear_mc_sdk.block.frosted_ice import FrostedIce
+from yunear_mc_sdk.block.furnace import Furnace
+from yunear_mc_sdk.block.gilded_blackstone import GildedBlackstone
+from yunear_mc_sdk.block.glass import Glass
+from yunear_mc_sdk.block.glass_pane import GlassPane
+from yunear_mc_sdk.block.glow_frame import GlowFrame
+from yunear_mc_sdk.block.glow_lichen import GlowLichen
+from yunear_mc_sdk.block.glowingobsidian import Glowingobsidian
+from yunear_mc_sdk.block.glowstone import Glowstone
+from yunear_mc_sdk.block.gold_block import GoldBlock
+from yunear_mc_sdk.block.gold_ore import GoldOre
+from yunear_mc_sdk.block.golden_rail import GoldenRail
+from yunear_mc_sdk.block.granite import Granite
+from yunear_mc_sdk.block.granite_stairs import GraniteStairs
+from yunear_mc_sdk.block.grass import Grass
+from yunear_mc_sdk.block.grass_path import GrassPath
+from yunear_mc_sdk.block.gravel import Gravel
+from yunear_mc_sdk.block.gray_candle import GrayCandle
+from yunear_mc_sdk.block.gray_candle_cake import GrayCandleCake
+from yunear_mc_sdk.block.gray_carpet import GrayCarpet
+from yunear_mc_sdk.block.gray_concrete import GrayConcrete
+from yunear_mc_sdk.block.gray_concrete_powder import GrayConcretePowder
+from yunear_mc_sdk.block.gray_glazed_terracotta import GrayGlazedTerracotta
+from yunear_mc_sdk.block.gray_shulker_box import GrayShulkerBox
+from yunear_mc_sdk.block.gray_stained_glass import GrayStainedGlass
+from yunear_mc_sdk.block.gray_stained_glass_pane import GrayStainedGlassPane
+from yunear_mc_sdk.block.gray_terracotta import GrayTerracotta
+from yunear_mc_sdk.block.gray_wool import GrayWool
+from yunear_mc_sdk.block.green_candle import GreenCandle
+from yunear_mc_sdk.block.green_candle_cake import GreenCandleCake
+from yunear_mc_sdk.block.green_carpet import GreenCarpet
+from yunear_mc_sdk.block.green_concrete import GreenConcrete
+from yunear_mc_sdk.block.green_concrete_powder import GreenConcretePowder
+from yunear_mc_sdk.block.green_glazed_terracotta import GreenGlazedTerracotta
+from yunear_mc_sdk.block.green_shulker_box import GreenShulkerBox
+from yunear_mc_sdk.block.green_stained_glass import GreenStainedGlass
+from yunear_mc_sdk.block.green_stained_glass_pane import GreenStainedGlassPane
+from yunear_mc_sdk.block.green_terracotta import GreenTerracotta
+from yunear_mc_sdk.block.green_wool import GreenWool
+from yunear_mc_sdk.block.grindstone import Grindstone
+from yunear_mc_sdk.block.hanging_roots import HangingRoots
+from yunear_mc_sdk.block.hard_black_stained_glass import HardBlackStainedGlass
+from yunear_mc_sdk.block.hard_black_stained_glass_pane import HardBlackStainedGlassPane
+from yunear_mc_sdk.block.hard_blue_stained_glass import HardBlueStainedGlass
+from yunear_mc_sdk.block.hard_blue_stained_glass_pane import HardBlueStainedGlassPane
+from yunear_mc_sdk.block.hard_brown_stained_glass import HardBrownStainedGlass
+from yunear_mc_sdk.block.hard_brown_stained_glass_pane import HardBrownStainedGlassPane
+from yunear_mc_sdk.block.hard_cyan_stained_glass import HardCyanStainedGlass
+from yunear_mc_sdk.block.hard_cyan_stained_glass_pane import HardCyanStainedGlassPane
+from yunear_mc_sdk.block.hard_glass import HardGlass
+from yunear_mc_sdk.block.hard_glass_pane import HardGlassPane
+from yunear_mc_sdk.block.hard_gray_stained_glass import HardGrayStainedGlass
+from yunear_mc_sdk.block.hard_gray_stained_glass_pane import HardGrayStainedGlassPane
+from yunear_mc_sdk.block.hard_green_stained_glass import HardGreenStainedGlass
+from yunear_mc_sdk.block.hard_green_stained_glass_pane import HardGreenStainedGlassPane
+from yunear_mc_sdk.block.hard_light_blue_stained_glass import HardLightBlueStainedGlass
+from yunear_mc_sdk.block.hard_light_blue_stained_glass_pane import HardLightBlueStainedGlassPane
+from yunear_mc_sdk.block.hard_light_gray_stained_glass import HardLightGrayStainedGlass
+from yunear_mc_sdk.block.hard_light_gray_stained_glass_pane import HardLightGrayStainedGlassPane
+from yunear_mc_sdk.block.hard_lime_stained_glass import HardLimeStainedGlass
+from yunear_mc_sdk.block.hard_lime_stained_glass_pane import HardLimeStainedGlassPane
+from yunear_mc_sdk.block.hard_magenta_stained_glass import HardMagentaStainedGlass
+from yunear_mc_sdk.block.hard_magenta_stained_glass_pane import HardMagentaStainedGlassPane
+from yunear_mc_sdk.block.hard_orange_stained_glass import HardOrangeStainedGlass
+from yunear_mc_sdk.block.hard_orange_stained_glass_pane import HardOrangeStainedGlassPane
+from yunear_mc_sdk.block.hard_pink_stained_glass import HardPinkStainedGlass
+from yunear_mc_sdk.block.hard_pink_stained_glass_pane import HardPinkStainedGlassPane
+from yunear_mc_sdk.block.hard_purple_stained_glass import HardPurpleStainedGlass
+from yunear_mc_sdk.block.hard_purple_stained_glass_pane import HardPurpleStainedGlassPane
+from yunear_mc_sdk.block.hard_red_stained_glass import HardRedStainedGlass
+from yunear_mc_sdk.block.hard_red_stained_glass_pane import HardRedStainedGlassPane
+from yunear_mc_sdk.block.hard_white_stained_glass import HardWhiteStainedGlass
+from yunear_mc_sdk.block.hard_white_stained_glass_pane import HardWhiteStainedGlassPane
+from yunear_mc_sdk.block.hard_yellow_stained_glass import HardYellowStainedGlass
+from yunear_mc_sdk.block.hard_yellow_stained_glass_pane import HardYellowStainedGlassPane
+from yunear_mc_sdk.block.hardened_clay import HardenedClay
+from yunear_mc_sdk.block.hay_block import HayBlock
+from yunear_mc_sdk.block.heavy_weighted_pressure_plate import HeavyWeightedPressurePlate
+from yunear_mc_sdk.block.honey_block import HoneyBlock
+from yunear_mc_sdk.block.honeycomb_block import HoneycombBlock
+from yunear_mc_sdk.block.hopper import Hopper
+from yunear_mc_sdk.block.horn_coral import HornCoral
+from yunear_mc_sdk.block.ice import Ice
+from yunear_mc_sdk.block.infested_deepslate import InfestedDeepslate
+from yunear_mc_sdk.block.info_update import InfoUpdate
+from yunear_mc_sdk.block.info_update2 import InfoUpdate2
+from yunear_mc_sdk.block.invisible_bedrock import InvisibleBedrock
+from yunear_mc_sdk.block.iron_bars import IronBars
+from yunear_mc_sdk.block.iron_block import IronBlock
+from yunear_mc_sdk.block.iron_door import IronDoor
+from yunear_mc_sdk.block.iron_ore import IronOre
+from yunear_mc_sdk.block.iron_trapdoor import IronTrapdoor
+from yunear_mc_sdk.block.jigsaw import Jigsaw
+from yunear_mc_sdk.block.jukebox import Jukebox
+from yunear_mc_sdk.block.jungle_button import JungleButton
+from yunear_mc_sdk.block.jungle_door import JungleDoor
+from yunear_mc_sdk.block.jungle_fence import JungleFence
+from yunear_mc_sdk.block.jungle_fence_gate import JungleFenceGate
+from yunear_mc_sdk.block.jungle_hanging_sign import JungleHangingSign
+from yunear_mc_sdk.block.jungle_log import JungleLog
+from yunear_mc_sdk.block.jungle_planks import JunglePlanks
+from yunear_mc_sdk.block.jungle_pressure_plate import JunglePressurePlate
+from yunear_mc_sdk.block.jungle_stairs import JungleStairs
+from yunear_mc_sdk.block.jungle_standing_sign import JungleStandingSign
+from yunear_mc_sdk.block.jungle_trapdoor import JungleTrapdoor
+from yunear_mc_sdk.block.jungle_wall_sign import JungleWallSign
+from yunear_mc_sdk.block.kelp import Kelp
+from yunear_mc_sdk.block.ladder import Ladder
+from yunear_mc_sdk.block.lantern import Lantern
+from yunear_mc_sdk.block.lapis_block import LapisBlock
+from yunear_mc_sdk.block.lapis_ore import LapisOre
+from yunear_mc_sdk.block.large_amethyst_bud import LargeAmethystBud
+from yunear_mc_sdk.block.lava import Lava
+from yunear_mc_sdk.block.leaves import Leaves
+from yunear_mc_sdk.block.leaves2 import Leaves2
+from yunear_mc_sdk.block.lectern import Lectern
+from yunear_mc_sdk.block.lever import Lever
+from yunear_mc_sdk.block.light_block import LightBlock
+from yunear_mc_sdk.block.light_blue_candle import LightBlueCandle
+from yunear_mc_sdk.block.light_blue_candle_cake import LightBlueCandleCake
+from yunear_mc_sdk.block.light_blue_carpet import LightBlueCarpet
+from yunear_mc_sdk.block.light_blue_concrete import LightBlueConcrete
+from yunear_mc_sdk.block.light_blue_concrete_powder import LightBlueConcretePowder
+from yunear_mc_sdk.block.light_blue_glazed_terracotta import LightBlueGlazedTerracotta
+from yunear_mc_sdk.block.light_blue_shulker_box import LightBlueShulkerBox
+from yunear_mc_sdk.block.light_blue_stained_glass import LightBlueStainedGlass
+from yunear_mc_sdk.block.light_blue_stained_glass_pane import LightBlueStainedGlassPane
+from yunear_mc_sdk.block.light_blue_terracotta import LightBlueTerracotta
+from yunear_mc_sdk.block.light_blue_wool import LightBlueWool
+from yunear_mc_sdk.block.light_gray_candle import LightGrayCandle
+from yunear_mc_sdk.block.light_gray_candle_cake import LightGrayCandleCake
+from yunear_mc_sdk.block.light_gray_carpet import LightGrayCarpet
+from yunear_mc_sdk.block.light_gray_concrete import LightGrayConcrete
+from yunear_mc_sdk.block.light_gray_concrete_powder import LightGrayConcretePowder
+from yunear_mc_sdk.block.light_gray_shulker_box import LightGrayShulkerBox
+from yunear_mc_sdk.block.light_gray_stained_glass import LightGrayStainedGlass
+from yunear_mc_sdk.block.light_gray_stained_glass_pane import LightGrayStainedGlassPane
+from yunear_mc_sdk.block.light_gray_terracotta import LightGrayTerracotta
+from yunear_mc_sdk.block.light_gray_wool import LightGrayWool
+from yunear_mc_sdk.block.light_weighted_pressure_plate import LightWeightedPressurePlate
+from yunear_mc_sdk.block.lightning_rod import LightningRod
+from yunear_mc_sdk.block.lime_candle import LimeCandle
+from yunear_mc_sdk.block.lime_candle_cake import LimeCandleCake
+from yunear_mc_sdk.block.lime_carpet import LimeCarpet
+from yunear_mc_sdk.block.lime_concrete import LimeConcrete
+from yunear_mc_sdk.block.lime_concrete_powder import LimeConcretePowder
+from yunear_mc_sdk.block.lime_glazed_terracotta import LimeGlazedTerracotta
+from yunear_mc_sdk.block.lime_shulker_box import LimeShulkerBox
+from yunear_mc_sdk.block.lime_stained_glass import LimeStainedGlass
+from yunear_mc_sdk.block.lime_stained_glass_pane import LimeStainedGlassPane
+from yunear_mc_sdk.block.lime_terracotta import LimeTerracotta
+from yunear_mc_sdk.block.lime_wool import LimeWool
+from yunear_mc_sdk.block.lit_blast_furnace import LitBlastFurnace
+from yunear_mc_sdk.block.lit_deepslate_redstone_ore import LitDeepslateRedstoneOre
+from yunear_mc_sdk.block.lit_furnace import LitFurnace
+from yunear_mc_sdk.block.lit_pumpkin import LitPumpkin
+from yunear_mc_sdk.block.lit_redstone_lamp import LitRedstoneLamp
+from yunear_mc_sdk.block.lit_redstone_ore import LitRedstoneOre
+from yunear_mc_sdk.block.lit_smoker import LitSmoker
+from yunear_mc_sdk.block.lodestone import Lodestone
+from yunear_mc_sdk.block.loom import Loom
+from yunear_mc_sdk.block.magenta_candle import MagentaCandle
+from yunear_mc_sdk.block.magenta_candle_cake import MagentaCandleCake
+from yunear_mc_sdk.block.magenta_carpet import MagentaCarpet
+from yunear_mc_sdk.block.magenta_concrete import MagentaConcrete
+from yunear_mc_sdk.block.magenta_concrete_powder import MagentaConcretePowder
+from yunear_mc_sdk.block.magenta_glazed_terracotta import MagentaGlazedTerracotta
+from yunear_mc_sdk.block.magenta_shulker_box import MagentaShulkerBox
+from yunear_mc_sdk.block.magenta_stained_glass import MagentaStainedGlass
+from yunear_mc_sdk.block.magenta_stained_glass_pane import MagentaStainedGlassPane
+from yunear_mc_sdk.block.magenta_terracotta import MagentaTerracotta
+from yunear_mc_sdk.block.magenta_wool import MagentaWool
+from yunear_mc_sdk.block.magma import Magma
+from yunear_mc_sdk.block.mangrove_button import MangroveButton
+from yunear_mc_sdk.block.mangrove_door import MangroveDoor
+from yunear_mc_sdk.block.mangrove_double_slab import MangroveDoubleSlab
+from yunear_mc_sdk.block.mangrove_fence import MangroveFence
+from yunear_mc_sdk.block.mangrove_fence_gate import MangroveFenceGate
+from yunear_mc_sdk.block.mangrove_hanging_sign import MangroveHangingSign
+from yunear_mc_sdk.block.mangrove_leaves import MangroveLeaves
+from yunear_mc_sdk.block.mangrove_log import MangroveLog
+from yunear_mc_sdk.block.mangrove_planks import MangrovePlanks
+from yunear_mc_sdk.block.mangrove_pressure_plate import MangrovePressurePlate
+from yunear_mc_sdk.block.mangrove_propagule import MangrovePropagule
+from yunear_mc_sdk.block.mangrove_roots import MangroveRoots
+from yunear_mc_sdk.block.mangrove_slab import MangroveSlab
+from yunear_mc_sdk.block.mangrove_stairs import MangroveStairs
+from yunear_mc_sdk.block.mangrove_standing_sign import MangroveStandingSign
+from yunear_mc_sdk.block.mangrove_trapdoor import MangroveTrapdoor
+from yunear_mc_sdk.block.mangrove_wall_sign import MangroveWallSign
+from yunear_mc_sdk.block.mangrove_wood import MangroveWood
+from yunear_mc_sdk.block.medium_amethyst_bud import MediumAmethystBud
+from yunear_mc_sdk.block.melon_block import MelonBlock
+from yunear_mc_sdk.block.melon_stem import MelonStem
+from yunear_mc_sdk.block.mob_spawner import MobSpawner
+from yunear_mc_sdk.block.monster_egg import MonsterEgg
+from yunear_mc_sdk.block.moss_block import MossBlock
+from yunear_mc_sdk.block.moss_carpet import MossCarpet
+from yunear_mc_sdk.block.mossy_cobblestone import MossyCobblestone
+from yunear_mc_sdk.block.mossy_cobblestone_stairs import MossyCobblestoneStairs
+from yunear_mc_sdk.block.mossy_stone_brick_stairs import MossyStoneBrickStairs
+from yunear_mc_sdk.block.moving_block import MovingBlock
+from yunear_mc_sdk.block.mud import Mud
+from yunear_mc_sdk.block.mud_brick_double_slab import MudBrickDoubleSlab
+from yunear_mc_sdk.block.mud_brick_slab import MudBrickSlab
+from yunear_mc_sdk.block.mud_brick_stairs import MudBrickStairs
+from yunear_mc_sdk.block.mud_brick_wall import MudBrickWall
+from yunear_mc_sdk.block.mud_bricks import MudBricks
+from yunear_mc_sdk.block.muddy_mangrove_roots import MuddyMangroveRoots
+from yunear_mc_sdk.block.mycelium import Mycelium
+from yunear_mc_sdk.block.nether_brick import NetherBrick
+from yunear_mc_sdk.block.nether_brick_fence import NetherBrickFence
+from yunear_mc_sdk.block.nether_brick_stairs import NetherBrickStairs
+from yunear_mc_sdk.block.nether_gold_ore import NetherGoldOre
+from yunear_mc_sdk.block.nether_sprouts import NetherSprouts
+from yunear_mc_sdk.block.nether_wart import NetherWart
+from yunear_mc_sdk.block.nether_wart_block import NetherWartBlock
+from yunear_mc_sdk.block.netherite_block import NetheriteBlock
+from yunear_mc_sdk.block.netherrack import Netherrack
+from yunear_mc_sdk.block.netherreactor import Netherreactor
+from yunear_mc_sdk.block.normal_stone_stairs import NormalStoneStairs
+from yunear_mc_sdk.block.noteblock import Noteblock
+from yunear_mc_sdk.block.oak_fence import OakFence
+from yunear_mc_sdk.block.oak_hanging_sign import OakHangingSign
+from yunear_mc_sdk.block.oak_log import OakLog
+from yunear_mc_sdk.block.oak_planks import OakPlanks
+from yunear_mc_sdk.block.oak_stairs import OakStairs
+from yunear_mc_sdk.block.observer import Observer
+from yunear_mc_sdk.block.obsidian import Obsidian
+from yunear_mc_sdk.block.ochre_froglight import OchreFroglight
+from yunear_mc_sdk.block.orange_candle import OrangeCandle
+from yunear_mc_sdk.block.orange_candle_cake import OrangeCandleCake
+from yunear_mc_sdk.block.orange_carpet import OrangeCarpet
+from yunear_mc_sdk.block.orange_concrete import OrangeConcrete
+from yunear_mc_sdk.block.orange_concrete_powder import OrangeConcretePowder
+from yunear_mc_sdk.block.orange_glazed_terracotta import OrangeGlazedTerracotta
+from yunear_mc_sdk.block.orange_shulker_box import OrangeShulkerBox
+from yunear_mc_sdk.block.orange_stained_glass import OrangeStainedGlass
+from yunear_mc_sdk.block.orange_stained_glass_pane import OrangeStainedGlassPane
+from yunear_mc_sdk.block.orange_terracotta import OrangeTerracotta
+from yunear_mc_sdk.block.orange_wool import OrangeWool
+from yunear_mc_sdk.block.oxidized_chiseled_copper import OxidizedChiseledCopper
+from yunear_mc_sdk.block.oxidized_copper import OxidizedCopper
+from yunear_mc_sdk.block.oxidized_copper_bulb import OxidizedCopperBulb
+from yunear_mc_sdk.block.oxidized_copper_door import OxidizedCopperDoor
+from yunear_mc_sdk.block.oxidized_copper_grate import OxidizedCopperGrate
+from yunear_mc_sdk.block.oxidized_copper_trapdoor import OxidizedCopperTrapdoor
+from yunear_mc_sdk.block.oxidized_cut_copper import OxidizedCutCopper
+from yunear_mc_sdk.block.oxidized_cut_copper_slab import OxidizedCutCopperSlab
+from yunear_mc_sdk.block.oxidized_cut_copper_stairs import OxidizedCutCopperStairs
+from yunear_mc_sdk.block.oxidized_double_cut_copper_slab import OxidizedDoubleCutCopperSlab
+from yunear_mc_sdk.block.packed_ice import PackedIce
+from yunear_mc_sdk.block.packed_mud import PackedMud
+from yunear_mc_sdk.block.pearlescent_froglight import PearlescentFroglight
+from yunear_mc_sdk.block.pink_candle import PinkCandle
+from yunear_mc_sdk.block.pink_candle_cake import PinkCandleCake
+from yunear_mc_sdk.block.pink_carpet import PinkCarpet
+from yunear_mc_sdk.block.pink_concrete import PinkConcrete
+from yunear_mc_sdk.block.pink_concrete_powder import PinkConcretePowder
+from yunear_mc_sdk.block.pink_glazed_terracotta import PinkGlazedTerracotta
+from yunear_mc_sdk.block.pink_petals import PinkPetals
+from yunear_mc_sdk.block.pink_shulker_box import PinkShulkerBox
+from yunear_mc_sdk.block.pink_stained_glass import PinkStainedGlass
+from yunear_mc_sdk.block.pink_stained_glass_pane import PinkStainedGlassPane
+from yunear_mc_sdk.block.pink_terracotta import PinkTerracotta
+from yunear_mc_sdk.block.pink_wool import PinkWool
+from yunear_mc_sdk.block.piston import Piston
+from yunear_mc_sdk.block.piston_arm_collision import PistonArmCollision
+from yunear_mc_sdk.block.pitcher_crop import PitcherCrop
+from yunear_mc_sdk.block.pitcher_plant import PitcherPlant
+from yunear_mc_sdk.block.podzol import Podzol
+from yunear_mc_sdk.block.pointed_dripstone import PointedDripstone
+from yunear_mc_sdk.block.polished_andesite import PolishedAndesite
+from yunear_mc_sdk.block.polished_andesite_stairs import PolishedAndesiteStairs
+from yunear_mc_sdk.block.polished_basalt import PolishedBasalt
+from yunear_mc_sdk.block.polished_blackstone import PolishedBlackstone
+from yunear_mc_sdk.block.polished_blackstone_brick_double_slab import PolishedBlackstoneBrickDoubleSlab
+from yunear_mc_sdk.block.polished_blackstone_brick_slab import PolishedBlackstoneBrickSlab
+from yunear_mc_sdk.block.polished_blackstone_brick_stairs import PolishedBlackstoneBrickStairs
+from yunear_mc_sdk.block.polished_blackstone_brick_wall import PolishedBlackstoneBrickWall
+from yunear_mc_sdk.block.polished_blackstone_bricks import PolishedBlackstoneBricks
+from yunear_mc_sdk.block.polished_blackstone_button import PolishedBlackstoneButton
+from yunear_mc_sdk.block.polished_blackstone_double_slab import PolishedBlackstoneDoubleSlab
+from yunear_mc_sdk.block.polished_blackstone_pressure_plate import PolishedBlackstonePressurePlate
+from yunear_mc_sdk.block.polished_blackstone_slab import PolishedBlackstoneSlab
+from yunear_mc_sdk.block.polished_blackstone_stairs import PolishedBlackstoneStairs
+from yunear_mc_sdk.block.polished_blackstone_wall import PolishedBlackstoneWall
+from yunear_mc_sdk.block.polished_deepslate import PolishedDeepslate
+from yunear_mc_sdk.block.polished_deepslate_double_slab import PolishedDeepslateDoubleSlab
+from yunear_mc_sdk.block.polished_deepslate_slab import PolishedDeepslateSlab
+from yunear_mc_sdk.block.polished_deepslate_stairs import PolishedDeepslateStairs
+from yunear_mc_sdk.block.polished_deepslate_wall import PolishedDeepslateWall
+from yunear_mc_sdk.block.polished_diorite import PolishedDiorite
+from yunear_mc_sdk.block.polished_diorite_stairs import PolishedDioriteStairs
+from yunear_mc_sdk.block.polished_granite import PolishedGranite
+from yunear_mc_sdk.block.polished_granite_stairs import PolishedGraniteStairs
+from yunear_mc_sdk.block.polished_tuff import PolishedTuff
+from yunear_mc_sdk.block.polished_tuff_double_slab import PolishedTuffDoubleSlab
+from yunear_mc_sdk.block.polished_tuff_slab import PolishedTuffSlab
+from yunear_mc_sdk.block.polished_tuff_stairs import PolishedTuffStairs
+from yunear_mc_sdk.block.polished_tuff_wall import PolishedTuffWall
+from yunear_mc_sdk.block.portal import Portal
+from yunear_mc_sdk.block.potatoes import Potatoes
+from yunear_mc_sdk.block.powder_snow import PowderSnow
+from yunear_mc_sdk.block.powered_comparator import PoweredComparator
+from yunear_mc_sdk.block.powered_repeater import PoweredRepeater
+from yunear_mc_sdk.block.prismarine import Prismarine
+from yunear_mc_sdk.block.prismarine_bricks_stairs import PrismarineBricksStairs
+from yunear_mc_sdk.block.prismarine_stairs import PrismarineStairs
+from yunear_mc_sdk.block.pumpkin import Pumpkin
+from yunear_mc_sdk.block.pumpkin_stem import PumpkinStem
+from yunear_mc_sdk.block.purple_candle import PurpleCandle
+from yunear_mc_sdk.block.purple_candle_cake import PurpleCandleCake
+from yunear_mc_sdk.block.purple_carpet import PurpleCarpet
+from yunear_mc_sdk.block.purple_concrete import PurpleConcrete
+from yunear_mc_sdk.block.purple_concrete_powder import PurpleConcretePowder
+from yunear_mc_sdk.block.purple_glazed_terracotta import PurpleGlazedTerracotta
+from yunear_mc_sdk.block.purple_shulker_box import PurpleShulkerBox
+from yunear_mc_sdk.block.purple_stained_glass import PurpleStainedGlass
+from yunear_mc_sdk.block.purple_stained_glass_pane import PurpleStainedGlassPane
+from yunear_mc_sdk.block.purple_terracotta import PurpleTerracotta
+from yunear_mc_sdk.block.purple_wool import PurpleWool
+from yunear_mc_sdk.block.purpur_block import PurpurBlock
+from yunear_mc_sdk.block.purpur_stairs import PurpurStairs
+from yunear_mc_sdk.block.quartz_block import QuartzBlock
+from yunear_mc_sdk.block.quartz_bricks import QuartzBricks
+from yunear_mc_sdk.block.quartz_ore import QuartzOre
+from yunear_mc_sdk.block.quartz_stairs import QuartzStairs
+from yunear_mc_sdk.block.rail import Rail
+from yunear_mc_sdk.block.raw_copper_block import RawCopperBlock
+from yunear_mc_sdk.block.raw_gold_block import RawGoldBlock
+from yunear_mc_sdk.block.raw_iron_block import RawIronBlock
+from yunear_mc_sdk.block.red_candle import RedCandle
+from yunear_mc_sdk.block.red_candle_cake import RedCandleCake
+from yunear_mc_sdk.block.red_carpet import RedCarpet
+from yunear_mc_sdk.block.red_concrete import RedConcrete
+from yunear_mc_sdk.block.red_concrete_powder import RedConcretePowder
+from yunear_mc_sdk.block.red_flower import RedFlower
+from yunear_mc_sdk.block.red_glazed_terracotta import RedGlazedTerracotta
+from yunear_mc_sdk.block.red_mushroom import RedMushroom
+from yunear_mc_sdk.block.red_mushroom_block import RedMushroomBlock
+from yunear_mc_sdk.block.red_nether_brick import RedNetherBrick
+from yunear_mc_sdk.block.red_nether_brick_stairs import RedNetherBrickStairs
+from yunear_mc_sdk.block.red_sandstone import RedSandstone
+from yunear_mc_sdk.block.red_sandstone_stairs import RedSandstoneStairs
+from yunear_mc_sdk.block.red_shulker_box import RedShulkerBox
+from yunear_mc_sdk.block.red_stained_glass import RedStainedGlass
+from yunear_mc_sdk.block.red_stained_glass_pane import RedStainedGlassPane
+from yunear_mc_sdk.block.red_terracotta import RedTerracotta
+from yunear_mc_sdk.block.red_wool import RedWool
+from yunear_mc_sdk.block.redstone_block import RedstoneBlock
+from yunear_mc_sdk.block.redstone_lamp import RedstoneLamp
+from yunear_mc_sdk.block.redstone_ore import RedstoneOre
+from yunear_mc_sdk.block.redstone_torch import RedstoneTorch
+from yunear_mc_sdk.block.redstone_wire import RedstoneWire
+from yunear_mc_sdk.block.reeds import Reeds
+from yunear_mc_sdk.block.reinforced_deepslate import ReinforcedDeepslate
+from yunear_mc_sdk.block.repeating_command_block import RepeatingCommandBlock
+from yunear_mc_sdk.block.reserved6 import Reserved6
+from yunear_mc_sdk.block.respawn_anchor import RespawnAnchor
+from yunear_mc_sdk.block.sand import Sand
+from yunear_mc_sdk.block.sandstone import Sandstone
+from yunear_mc_sdk.block.sandstone_stairs import SandstoneStairs
+from yunear_mc_sdk.block.sapling import Sapling
+from yunear_mc_sdk.block.scaffolding import Scaffolding
+from yunear_mc_sdk.block.sculk import Sculk
+from yunear_mc_sdk.block.sculk_catalyst import SculkCatalyst
+from yunear_mc_sdk.block.sculk_sensor import SculkSensor
+from yunear_mc_sdk.block.sculk_shrieker import SculkShrieker
+from yunear_mc_sdk.block.sculk_vein import SculkVein
+from yunear_mc_sdk.block.sea_lantern import SeaLantern
+from yunear_mc_sdk.block.sea_pickle import SeaPickle
+from yunear_mc_sdk.block.seagrass import Seagrass
+from yunear_mc_sdk.block.shroomlight import Shroomlight
+from yunear_mc_sdk.block.silver_glazed_terracotta import SilverGlazedTerracotta
+from yunear_mc_sdk.block.skull import Skull
+from yunear_mc_sdk.block.slime import Slime
+from yunear_mc_sdk.block.small_amethyst_bud import SmallAmethystBud
+from yunear_mc_sdk.block.small_dripleaf_block import SmallDripleafBlock
+from yunear_mc_sdk.block.smithing_table import SmithingTable
+from yunear_mc_sdk.block.smoker import Smoker
+from yunear_mc_sdk.block.smooth_basalt import SmoothBasalt
+from yunear_mc_sdk.block.smooth_quartz_stairs import SmoothQuartzStairs
+from yunear_mc_sdk.block.smooth_red_sandstone_stairs import SmoothRedSandstoneStairs
+from yunear_mc_sdk.block.smooth_sandstone_stairs import SmoothSandstoneStairs
+from yunear_mc_sdk.block.smooth_stone import SmoothStone
+from yunear_mc_sdk.block.sniffer_egg import SnifferEgg
+from yunear_mc_sdk.block.snow import Snow
+from yunear_mc_sdk.block.snow_layer import SnowLayer
+from yunear_mc_sdk.block.soul_campfire import SoulCampfire
+from yunear_mc_sdk.block.soul_fire import SoulFire
+from yunear_mc_sdk.block.soul_lantern import SoulLantern
+from yunear_mc_sdk.block.soul_sand import SoulSand
+from yunear_mc_sdk.block.soul_soil import SoulSoil
+from yunear_mc_sdk.block.soul_torch import SoulTorch
+from yunear_mc_sdk.block.sponge import Sponge
+from yunear_mc_sdk.block.spore_blossom import SporeBlossom
+from yunear_mc_sdk.block.spruce_button import SpruceButton
+from yunear_mc_sdk.block.spruce_door import SpruceDoor
+from yunear_mc_sdk.block.spruce_fence import SpruceFence
+from yunear_mc_sdk.block.spruce_fence_gate import SpruceFenceGate
+from yunear_mc_sdk.block.spruce_hanging_sign import SpruceHangingSign
+from yunear_mc_sdk.block.spruce_log import SpruceLog
+from yunear_mc_sdk.block.spruce_planks import SprucePlanks
+from yunear_mc_sdk.block.spruce_pressure_plate import SprucePressurePlate
+from yunear_mc_sdk.block.spruce_stairs import SpruceStairs
+from yunear_mc_sdk.block.spruce_standing_sign import SpruceStandingSign
+from yunear_mc_sdk.block.spruce_trapdoor import SpruceTrapdoor
+from yunear_mc_sdk.block.spruce_wall_sign import SpruceWallSign
+from yunear_mc_sdk.block.standing_banner import StandingBanner
+from yunear_mc_sdk.block.standing_sign import StandingSign
+from yunear_mc_sdk.block.sticky_piston import StickyPiston
+from yunear_mc_sdk.block.sticky_piston_arm_collision import StickyPistonArmCollision
+from yunear_mc_sdk.block.stone import Stone
+from yunear_mc_sdk.block.stone_block_slab import StoneBlockSlab
+from yunear_mc_sdk.block.stone_block_slab2 import StoneBlockSlab2
+from yunear_mc_sdk.block.stone_block_slab3 import StoneBlockSlab3
+from yunear_mc_sdk.block.stone_block_slab4 import StoneBlockSlab4
+from yunear_mc_sdk.block.stone_brick_stairs import StoneBrickStairs
+from yunear_mc_sdk.block.stone_button import StoneButton
+from yunear_mc_sdk.block.stone_pressure_plate import StonePressurePlate
+from yunear_mc_sdk.block.stone_stairs import StoneStairs
+from yunear_mc_sdk.block.stonebrick import Stonebrick
+from yunear_mc_sdk.block.stonecutter import Stonecutter
+from yunear_mc_sdk.block.stonecutter_block import StonecutterBlock
+from yunear_mc_sdk.block.stripped_acacia_log import StrippedAcaciaLog
+from yunear_mc_sdk.block.stripped_bamboo_block import StrippedBambooBlock
+from yunear_mc_sdk.block.stripped_birch_log import StrippedBirchLog
+from yunear_mc_sdk.block.stripped_cherry_log import StrippedCherryLog
+from yunear_mc_sdk.block.stripped_cherry_wood import StrippedCherryWood
+from yunear_mc_sdk.block.stripped_crimson_hyphae import StrippedCrimsonHyphae
+from yunear_mc_sdk.block.stripped_crimson_stem import StrippedCrimsonStem
+from yunear_mc_sdk.block.stripped_dark_oak_log import StrippedDarkOakLog
+from yunear_mc_sdk.block.stripped_jungle_log import StrippedJungleLog
+from yunear_mc_sdk.block.stripped_mangrove_log import StrippedMangroveLog
+from yunear_mc_sdk.block.stripped_mangrove_wood import StrippedMangroveWood
+from yunear_mc_sdk.block.stripped_oak_log import StrippedOakLog
+from yunear_mc_sdk.block.stripped_spruce_log import StrippedSpruceLog
+from yunear_mc_sdk.block.stripped_warped_hyphae import StrippedWarpedHyphae
+from yunear_mc_sdk.block.stripped_warped_stem import StrippedWarpedStem
+from yunear_mc_sdk.block.structure_block import StructureBlock
+from yunear_mc_sdk.block.structure_void import StructureVoid
+from yunear_mc_sdk.block.suspicious_gravel import SuspiciousGravel
+from yunear_mc_sdk.block.suspicious_sand import SuspiciousSand
+from yunear_mc_sdk.block.sweet_berry_bush import SweetBerryBush
+from yunear_mc_sdk.block.tallgrass import Tallgrass
+from yunear_mc_sdk.block.target import Target
+from yunear_mc_sdk.block.tinted_glass import TintedGlass
+from yunear_mc_sdk.block.tnt import Tnt
+from yunear_mc_sdk.block.torch import Torch
+from yunear_mc_sdk.block.torchflower import Torchflower
+from yunear_mc_sdk.block.torchflower_crop import TorchflowerCrop
+from yunear_mc_sdk.block.trapdoor import Trapdoor
+from yunear_mc_sdk.block.trapped_chest import TrappedChest
+from yunear_mc_sdk.block.trial_spawner import TrialSpawner
+from yunear_mc_sdk.block.trip_wire import TripWire
+from yunear_mc_sdk.block.tripwire_hook import TripwireHook
+from yunear_mc_sdk.block.tube_coral import TubeCoral
+from yunear_mc_sdk.block.tuff import Tuff
+from yunear_mc_sdk.block.tuff_brick_double_slab import TuffBrickDoubleSlab
+from yunear_mc_sdk.block.tuff_brick_slab import TuffBrickSlab
+from yunear_mc_sdk.block.tuff_brick_stairs import TuffBrickStairs
+from yunear_mc_sdk.block.tuff_brick_wall import TuffBrickWall
+from yunear_mc_sdk.block.tuff_bricks import TuffBricks
+from yunear_mc_sdk.block.tuff_double_slab import TuffDoubleSlab
+from yunear_mc_sdk.block.tuff_slab import TuffSlab
+from yunear_mc_sdk.block.tuff_stairs import TuffStairs
+from yunear_mc_sdk.block.tuff_wall import TuffWall
+from yunear_mc_sdk.block.turtle_egg import TurtleEgg
+from yunear_mc_sdk.block.twisting_vines import TwistingVines
+from yunear_mc_sdk.block.underwater_torch import UnderwaterTorch
+from yunear_mc_sdk.block.undyed_shulker_box import UndyedShulkerBox
+from yunear_mc_sdk.block.unknown import Unknown
+from yunear_mc_sdk.block.unlit_redstone_torch import UnlitRedstoneTorch
+from yunear_mc_sdk.block.unpowered_comparator import UnpoweredComparator
+from yunear_mc_sdk.block.unpowered_repeater import UnpoweredRepeater
+from yunear_mc_sdk.block.verdant_froglight import VerdantFroglight
+from yunear_mc_sdk.block.vine import Vine
+from yunear_mc_sdk.block.wall_banner import WallBanner
+from yunear_mc_sdk.block.wall_sign import WallSign
+from yunear_mc_sdk.block.warped_button import WarpedButton
+from yunear_mc_sdk.block.warped_door import WarpedDoor
+from yunear_mc_sdk.block.warped_double_slab import WarpedDoubleSlab
+from yunear_mc_sdk.block.warped_fence import WarpedFence
+from yunear_mc_sdk.block.warped_fence_gate import WarpedFenceGate
+from yunear_mc_sdk.block.warped_fungus import WarpedFungus
+from yunear_mc_sdk.block.warped_hanging_sign import WarpedHangingSign
+from yunear_mc_sdk.block.warped_hyphae import WarpedHyphae
+from yunear_mc_sdk.block.warped_nylium import WarpedNylium
+from yunear_mc_sdk.block.warped_planks import WarpedPlanks
+from yunear_mc_sdk.block.warped_pressure_plate import WarpedPressurePlate
+from yunear_mc_sdk.block.warped_roots import WarpedRoots
+from yunear_mc_sdk.block.warped_slab import WarpedSlab
+from yunear_mc_sdk.block.warped_stairs import WarpedStairs
+from yunear_mc_sdk.block.warped_standing_sign import WarpedStandingSign
+from yunear_mc_sdk.block.warped_stem import WarpedStem
+from yunear_mc_sdk.block.warped_trapdoor import WarpedTrapdoor
+from yunear_mc_sdk.block.warped_wall_sign import WarpedWallSign
+from yunear_mc_sdk.block.warped_wart_block import WarpedWartBlock
+from yunear_mc_sdk.block.water import Water
+from yunear_mc_sdk.block.waterlily import Waterlily
+from yunear_mc_sdk.block.waxed_chiseled_copper import WaxedChiseledCopper
+from yunear_mc_sdk.block.waxed_copper import WaxedCopper
+from yunear_mc_sdk.block.waxed_copper_bulb import WaxedCopperBulb
+from yunear_mc_sdk.block.waxed_copper_door import WaxedCopperDoor
+from yunear_mc_sdk.block.waxed_copper_grate import WaxedCopperGrate
+from yunear_mc_sdk.block.waxed_copper_trapdoor import WaxedCopperTrapdoor
+from yunear_mc_sdk.block.waxed_cut_copper import WaxedCutCopper
+from yunear_mc_sdk.block.waxed_cut_copper_slab import WaxedCutCopperSlab
+from yunear_mc_sdk.block.waxed_cut_copper_stairs import WaxedCutCopperStairs
+from yunear_mc_sdk.block.waxed_double_cut_copper_slab import WaxedDoubleCutCopperSlab
+from yunear_mc_sdk.block.waxed_exposed_chiseled_copper import WaxedExposedChiseledCopper
+from yunear_mc_sdk.block.waxed_exposed_copper import WaxedExposedCopper
+from yunear_mc_sdk.block.waxed_exposed_copper_bulb import WaxedExposedCopperBulb
+from yunear_mc_sdk.block.waxed_exposed_copper_door import WaxedExposedCopperDoor
+from yunear_mc_sdk.block.waxed_exposed_copper_grate import WaxedExposedCopperGrate
+from yunear_mc_sdk.block.waxed_exposed_copper_trapdoor import WaxedExposedCopperTrapdoor
+from yunear_mc_sdk.block.waxed_exposed_cut_copper import WaxedExposedCutCopper
+from yunear_mc_sdk.block.waxed_exposed_cut_copper_slab import WaxedExposedCutCopperSlab
+from yunear_mc_sdk.block.waxed_exposed_cut_copper_stairs import WaxedExposedCutCopperStairs
+from yunear_mc_sdk.block.waxed_exposed_double_cut_copper_slab import WaxedExposedDoubleCutCopperSlab
+from yunear_mc_sdk.block.waxed_oxidized_chiseled_copper import WaxedOxidizedChiseledCopper
+from yunear_mc_sdk.block.waxed_oxidized_copper import WaxedOxidizedCopper
+from yunear_mc_sdk.block.waxed_oxidized_copper_bulb import WaxedOxidizedCopperBulb
+from yunear_mc_sdk.block.waxed_oxidized_copper_door import WaxedOxidizedCopperDoor
+from yunear_mc_sdk.block.waxed_oxidized_copper_grate import WaxedOxidizedCopperGrate
+from yunear_mc_sdk.block.waxed_oxidized_copper_trapdoor import WaxedOxidizedCopperTrapdoor
+from yunear_mc_sdk.block.waxed_oxidized_cut_copper import WaxedOxidizedCutCopper
+from yunear_mc_sdk.block.waxed_oxidized_cut_copper_slab import WaxedOxidizedCutCopperSlab
+from yunear_mc_sdk.block.waxed_oxidized_cut_copper_stairs import WaxedOxidizedCutCopperStairs
+from yunear_mc_sdk.block.waxed_oxidized_double_cut_copper_slab import WaxedOxidizedDoubleCutCopperSlab
+from yunear_mc_sdk.block.waxed_weathered_chiseled_copper import WaxedWeatheredChiseledCopper
+from yunear_mc_sdk.block.waxed_weathered_copper import WaxedWeatheredCopper
+from yunear_mc_sdk.block.waxed_weathered_copper_bulb import WaxedWeatheredCopperBulb
+from yunear_mc_sdk.block.waxed_weathered_copper_door import WaxedWeatheredCopperDoor
+from yunear_mc_sdk.block.waxed_weathered_copper_grate import WaxedWeatheredCopperGrate
+from yunear_mc_sdk.block.waxed_weathered_copper_trapdoor import WaxedWeatheredCopperTrapdoor
+from yunear_mc_sdk.block.waxed_weathered_cut_copper import WaxedWeatheredCutCopper
+from yunear_mc_sdk.block.waxed_weathered_cut_copper_slab import WaxedWeatheredCutCopperSlab
+from yunear_mc_sdk.block.waxed_weathered_cut_copper_stairs import WaxedWeatheredCutCopperStairs
+from yunear_mc_sdk.block.waxed_weathered_double_cut_copper_slab import WaxedWeatheredDoubleCutCopperSlab
+from yunear_mc_sdk.block.weathered_chiseled_copper import WeatheredChiseledCopper
+from yunear_mc_sdk.block.weathered_copper import WeatheredCopper
+from yunear_mc_sdk.block.weathered_copper_bulb import WeatheredCopperBulb
+from yunear_mc_sdk.block.weathered_copper_door import WeatheredCopperDoor
+from yunear_mc_sdk.block.weathered_copper_grate import WeatheredCopperGrate
+from yunear_mc_sdk.block.weathered_copper_trapdoor import WeatheredCopperTrapdoor
+from yunear_mc_sdk.block.weathered_cut_copper import WeatheredCutCopper
+from yunear_mc_sdk.block.weathered_cut_copper_slab import WeatheredCutCopperSlab
+from yunear_mc_sdk.block.weathered_cut_copper_stairs import WeatheredCutCopperStairs
+from yunear_mc_sdk.block.weathered_double_cut_copper_slab import WeatheredDoubleCutCopperSlab
+from yunear_mc_sdk.block.web import Web
+from yunear_mc_sdk.block.weeping_vines import WeepingVines
+from yunear_mc_sdk.block.wheat import Wheat
+from yunear_mc_sdk.block.white_candle import WhiteCandle
+from yunear_mc_sdk.block.white_candle_cake import WhiteCandleCake
+from yunear_mc_sdk.block.white_carpet import WhiteCarpet
+from yunear_mc_sdk.block.white_concrete import WhiteConcrete
+from yunear_mc_sdk.block.white_concrete_powder import WhiteConcretePowder
+from yunear_mc_sdk.block.white_glazed_terracotta import WhiteGlazedTerracotta
+from yunear_mc_sdk.block.white_shulker_box import WhiteShulkerBox
+from yunear_mc_sdk.block.white_stained_glass import WhiteStainedGlass
+from yunear_mc_sdk.block.white_stained_glass_pane import WhiteStainedGlassPane
+from yunear_mc_sdk.block.white_terracotta import WhiteTerracotta
+from yunear_mc_sdk.block.white_wool import WhiteWool
+from yunear_mc_sdk.block.wither_rose import WitherRose
+from yunear_mc_sdk.block.wood import Wood
+from yunear_mc_sdk.block.wooden_button import WoodenButton
+from yunear_mc_sdk.block.wooden_door import WoodenDoor
+from yunear_mc_sdk.block.wooden_pressure_plate import WoodenPressurePlate
+from yunear_mc_sdk.block.wooden_slab import WoodenSlab
+from yunear_mc_sdk.block.yellow_candle import YellowCandle
+from yunear_mc_sdk.block.yellow_candle_cake import YellowCandleCake
+from yunear_mc_sdk.block.yellow_carpet import YellowCarpet
+from yunear_mc_sdk.block.yellow_concrete import YellowConcrete
+from yunear_mc_sdk.block.yellow_concrete_powder import YellowConcretePowder
+from yunear_mc_sdk.block.yellow_flower import YellowFlower
+from yunear_mc_sdk.block.yellow_glazed_terracotta import YellowGlazedTerracotta
+from yunear_mc_sdk.block.yellow_shulker_box import YellowShulkerBox
+from yunear_mc_sdk.block.yellow_stained_glass import YellowStainedGlass
+from yunear_mc_sdk.block.yellow_stained_glass_pane import YellowStainedGlassPane
+from yunear_mc_sdk.block.yellow_terracotta import YellowTerracotta
+from yunear_mc_sdk.block.yellow_wool import YellowWool
+
+BlockFactory = {
+    "minecraft:acacia_button": AcaciaButton,
+    "minecraft:acacia_door": AcaciaDoor,
+    "minecraft:acacia_fence": AcaciaFence,
+    "minecraft:acacia_fence_gate": AcaciaFenceGate,
+    "minecraft:acacia_hanging_sign": AcaciaHangingSign,
+    "minecraft:acacia_log": AcaciaLog,
+    "minecraft:acacia_planks": AcaciaPlanks,
+    "minecraft:acacia_pressure_plate": AcaciaPressurePlate,
+    "minecraft:acacia_stairs": AcaciaStairs,
+    "minecraft:acacia_standing_sign": AcaciaStandingSign,
+    "minecraft:acacia_trapdoor": AcaciaTrapdoor,
+    "minecraft:acacia_wall_sign": AcaciaWallSign,
+    "minecraft:activator_rail": ActivatorRail,
+    "minecraft:air": Air,
+    "minecraft:allow": Allow,
+    "minecraft:amethyst_block": AmethystBlock,
+    "minecraft:amethyst_cluster": AmethystCluster,
+    "minecraft:ancient_debris": AncientDebris,
+    "minecraft:andesite": Andesite,
+    "minecraft:andesite_stairs": AndesiteStairs,
+    "minecraft:anvil": Anvil,
+    "minecraft:azalea": Azalea,
+    "minecraft:azalea_leaves": AzaleaLeaves,
+    "minecraft:azalea_leaves_flowered": AzaleaLeavesFlowered,
+    "minecraft:bamboo": Bamboo,
+    "minecraft:bamboo_block": BambooBlock,
+    "minecraft:bamboo_button": BambooButton,
+    "minecraft:bamboo_door": BambooDoor,
+    "minecraft:bamboo_double_slab": BambooDoubleSlab,
+    "minecraft:bamboo_fence": BambooFence,
+    "minecraft:bamboo_fence_gate": BambooFenceGate,
+    "minecraft:bamboo_hanging_sign": BambooHangingSign,
+    "minecraft:bamboo_mosaic": BambooMosaic,
+    "minecraft:bamboo_mosaic_double_slab": BambooMosaicDoubleSlab,
+    "minecraft:bamboo_mosaic_slab": BambooMosaicSlab,
+    "minecraft:bamboo_mosaic_stairs": BambooMosaicStairs,
+    "minecraft:bamboo_planks": BambooPlanks,
+    "minecraft:bamboo_pressure_plate": BambooPressurePlate,
+    "minecraft:bamboo_sapling": BambooSapling,
+    "minecraft:bamboo_slab": BambooSlab,
+    "minecraft:bamboo_stairs": BambooStairs,
+    "minecraft:bamboo_standing_sign": BambooStandingSign,
+    "minecraft:bamboo_trapdoor": BambooTrapdoor,
+    "minecraft:bamboo_wall_sign": BambooWallSign,
+    "minecraft:barrel": Barrel,
+    "minecraft:barrier": Barrier,
+    "minecraft:basalt": Basalt,
+    "minecraft:beacon": Beacon,
+    "minecraft:bed": Bed,
+    "minecraft:bedrock": Bedrock,
+    "minecraft:bee_nest": BeeNest,
+    "minecraft:beehive": Beehive,
+    "minecraft:beetroot": Beetroot,
+    "minecraft:bell": Bell,
+    "minecraft:big_dripleaf": BigDripleaf,
+    "minecraft:birch_button": BirchButton,
+    "minecraft:birch_door": BirchDoor,
+    "minecraft:birch_fence": BirchFence,
+    "minecraft:birch_fence_gate": BirchFenceGate,
+    "minecraft:birch_hanging_sign": BirchHangingSign,
+    "minecraft:birch_log": BirchLog,
+    "minecraft:birch_planks": BirchPlanks,
+    "minecraft:birch_pressure_plate": BirchPressurePlate,
+    "minecraft:birch_stairs": BirchStairs,
+    "minecraft:birch_standing_sign": BirchStandingSign,
+    "minecraft:birch_trapdoor": BirchTrapdoor,
+    "minecraft:birch_wall_sign": BirchWallSign,
+    "minecraft:black_candle": BlackCandle,
+    "minecraft:black_candle_cake": BlackCandleCake,
+    "minecraft:black_carpet": BlackCarpet,
+    "minecraft:black_concrete": BlackConcrete,
+    "minecraft:black_concrete_powder": BlackConcretePowder,
+    "minecraft:black_glazed_terracotta": BlackGlazedTerracotta,
+    "minecraft:black_shulker_box": BlackShulkerBox,
+    "minecraft:black_stained_glass": BlackStainedGlass,
+    "minecraft:black_stained_glass_pane": BlackStainedGlassPane,
+    "minecraft:black_terracotta": BlackTerracotta,
+    "minecraft:black_wool": BlackWool,
+    "minecraft:blackstone": Blackstone,
+    "minecraft:blackstone_double_slab": BlackstoneDoubleSlab,
+    "minecraft:blackstone_slab": BlackstoneSlab,
+    "minecraft:blackstone_stairs": BlackstoneStairs,
+    "minecraft:blackstone_wall": BlackstoneWall,
+    "minecraft:blast_furnace": BlastFurnace,
+    "minecraft:blue_candle": BlueCandle,
+    "minecraft:blue_candle_cake": BlueCandleCake,
+    "minecraft:blue_carpet": BlueCarpet,
+    "minecraft:blue_concrete": BlueConcrete,
+    "minecraft:blue_concrete_powder": BlueConcretePowder,
+    "minecraft:blue_glazed_terracotta": BlueGlazedTerracotta,
+    "minecraft:blue_ice": BlueIce,
+    "minecraft:blue_shulker_box": BlueShulkerBox,
+    "minecraft:blue_stained_glass": BlueStainedGlass,
+    "minecraft:blue_stained_glass_pane": BlueStainedGlassPane,
+    "minecraft:blue_terracotta": BlueTerracotta,
+    "minecraft:blue_wool": BlueWool,
+    "minecraft:bone_block": BoneBlock,
+    "minecraft:bookshelf": Bookshelf,
+    "minecraft:border_block": BorderBlock,
+    "minecraft:brain_coral": BrainCoral,
+    "minecraft:brewing_stand": BrewingStand,
+    "minecraft:brick_block": BrickBlock,
+    "minecraft:brick_stairs": BrickStairs,
+    "minecraft:brown_candle": BrownCandle,
+    "minecraft:brown_candle_cake": BrownCandleCake,
+    "minecraft:brown_carpet": BrownCarpet,
+    "minecraft:brown_concrete": BrownConcrete,
+    "minecraft:brown_concrete_powder": BrownConcretePowder,
+    "minecraft:brown_glazed_terracotta": BrownGlazedTerracotta,
+    "minecraft:brown_mushroom": BrownMushroom,
+    "minecraft:brown_mushroom_block": BrownMushroomBlock,
+    "minecraft:brown_shulker_box": BrownShulkerBox,
+    "minecraft:brown_stained_glass": BrownStainedGlass,
+    "minecraft:brown_stained_glass_pane": BrownStainedGlassPane,
+    "minecraft:brown_terracotta": BrownTerracotta,
+    "minecraft:brown_wool": BrownWool,
+    "minecraft:bubble_column": BubbleColumn,
+    "minecraft:bubble_coral": BubbleCoral,
+    "minecraft:budding_amethyst": BuddingAmethyst,
+    "minecraft:cactus": Cactus,
+    "minecraft:cake": Cake,
+    "minecraft:calcite": Calcite,
+    "minecraft:calibrated_sculk_sensor": CalibratedSculkSensor,
+    "minecraft:camera": Camera,
+    "minecraft:campfire": Campfire,
+    "minecraft:candle": Candle,
+    "minecraft:candle_cake": CandleCake,
+    "minecraft:carrots": Carrots,
+    "minecraft:cartography_table": CartographyTable,
+    "minecraft:carved_pumpkin": CarvedPumpkin,
+    "minecraft:cauldron": Cauldron,
+    "minecraft:cave_vines": CaveVines,
+    "minecraft:cave_vines_body_with_berries": CaveVinesBodyWithBerries,
+    "minecraft:cave_vines_head_with_berries": CaveVinesHeadWithBerries,
+    "minecraft:chain": Chain,
+    "minecraft:chain_command_block": ChainCommandBlock,
+    "minecraft:chemical_heat": ChemicalHeat,
+    "minecraft:chemistry_table": ChemistryTable,
+    "minecraft:cherry_button": CherryButton,
+    "minecraft:cherry_door": CherryDoor,
+    "minecraft:cherry_double_slab": CherryDoubleSlab,
+    "minecraft:cherry_fence": CherryFence,
+    "minecraft:cherry_fence_gate": CherryFenceGate,
+    "minecraft:cherry_hanging_sign": CherryHangingSign,
+    "minecraft:cherry_leaves": CherryLeaves,
+    "minecraft:cherry_log": CherryLog,
+    "minecraft:cherry_planks": CherryPlanks,
+    "minecraft:cherry_pressure_plate": CherryPressurePlate,
+    "minecraft:cherry_sapling": CherrySapling,
+    "minecraft:cherry_slab": CherrySlab,
+    "minecraft:cherry_stairs": CherryStairs,
+    "minecraft:cherry_standing_sign": CherryStandingSign,
+    "minecraft:cherry_trapdoor": CherryTrapdoor,
+    "minecraft:cherry_wall_sign": CherryWallSign,
+    "minecraft:cherry_wood": CherryWood,
+    "minecraft:chest": Chest,
+    "minecraft:chiseled_bookshelf": ChiseledBookshelf,
+    "minecraft:chiseled_copper": ChiseledCopper,
+    "minecraft:chiseled_deepslate": ChiseledDeepslate,
+    "minecraft:chiseled_nether_bricks": ChiseledNetherBricks,
+    "minecraft:chiseled_polished_blackstone": ChiseledPolishedBlackstone,
+    "minecraft:chiseled_tuff": ChiseledTuff,
+    "minecraft:chiseled_tuff_bricks": ChiseledTuffBricks,
+    "minecraft:chorus_flower": ChorusFlower,
+    "minecraft:chorus_plant": ChorusPlant,
+    "minecraft:clay": Clay,
+    "minecraft:client_request_placeholder_block": ClientRequestPlaceholderBlock,
+    "minecraft:coal_block": CoalBlock,
+    "minecraft:coal_ore": CoalOre,
+    "minecraft:cobbled_deepslate": CobbledDeepslate,
+    "minecraft:cobbled_deepslate_double_slab": CobbledDeepslateDoubleSlab,
+    "minecraft:cobbled_deepslate_slab": CobbledDeepslateSlab,
+    "minecraft:cobbled_deepslate_stairs": CobbledDeepslateStairs,
+    "minecraft:cobbled_deepslate_wall": CobbledDeepslateWall,
+    "minecraft:cobblestone": Cobblestone,
+    "minecraft:cobblestone_wall": CobblestoneWall,
+    "minecraft:cocoa": Cocoa,
+    "minecraft:colored_torch_bp": ColoredTorchBp,
+    "minecraft:colored_torch_rg": ColoredTorchRg,
+    "minecraft:command_block": CommandBlock,
+    "minecraft:composter": Composter,
+    "minecraft:conduit": Conduit,
+    "minecraft:copper_block": CopperBlock,
+    "minecraft:copper_bulb": CopperBulb,
+    "minecraft:copper_door": CopperDoor,
+    "minecraft:copper_grate": CopperGrate,
+    "minecraft:copper_ore": CopperOre,
+    "minecraft:copper_trapdoor": CopperTrapdoor,
+    "minecraft:coral_block": CoralBlock,
+    "minecraft:coral_fan": CoralFan,
+    "minecraft:coral_fan_dead": CoralFanDead,
+    "minecraft:coral_fan_hang": CoralFanHang,
+    "minecraft:coral_fan_hang2": CoralFanHang2,
+    "minecraft:coral_fan_hang3": CoralFanHang3,
+    "minecraft:cracked_deepslate_bricks": CrackedDeepslateBricks,
+    "minecraft:cracked_deepslate_tiles": CrackedDeepslateTiles,
+    "minecraft:cracked_nether_bricks": CrackedNetherBricks,
+    "minecraft:cracked_polished_blackstone_bricks": CrackedPolishedBlackstoneBricks,
+    "minecraft:crafter": Crafter,
+    "minecraft:crafting_table": CraftingTable,
+    "minecraft:crimson_button": CrimsonButton,
+    "minecraft:crimson_door": CrimsonDoor,
+    "minecraft:crimson_double_slab": CrimsonDoubleSlab,
+    "minecraft:crimson_fence": CrimsonFence,
+    "minecraft:crimson_fence_gate": CrimsonFenceGate,
+    "minecraft:crimson_fungus": CrimsonFungus,
+    "minecraft:crimson_hanging_sign": CrimsonHangingSign,
+    "minecraft:crimson_hyphae": CrimsonHyphae,
+    "minecraft:crimson_nylium": CrimsonNylium,
+    "minecraft:crimson_planks": CrimsonPlanks,
+    "minecraft:crimson_pressure_plate": CrimsonPressurePlate,
+    "minecraft:crimson_roots": CrimsonRoots,
+    "minecraft:crimson_slab": CrimsonSlab,
+    "minecraft:crimson_stairs": CrimsonStairs,
+    "minecraft:crimson_standing_sign": CrimsonStandingSign,
+    "minecraft:crimson_stem": CrimsonStem,
+    "minecraft:crimson_trapdoor": CrimsonTrapdoor,
+    "minecraft:crimson_wall_sign": CrimsonWallSign,
+    "minecraft:crying_obsidian": CryingObsidian,
+    "minecraft:cut_copper": CutCopper,
+    "minecraft:cut_copper_slab": CutCopperSlab,
+    "minecraft:cut_copper_stairs": CutCopperStairs,
+    "minecraft:cyan_candle": CyanCandle,
+    "minecraft:cyan_candle_cake": CyanCandleCake,
+    "minecraft:cyan_carpet": CyanCarpet,
+    "minecraft:cyan_concrete": CyanConcrete,
+    "minecraft:cyan_concrete_powder": CyanConcretePowder,
+    "minecraft:cyan_glazed_terracotta": CyanGlazedTerracotta,
+    "minecraft:cyan_shulker_box": CyanShulkerBox,
+    "minecraft:cyan_stained_glass": CyanStainedGlass,
+    "minecraft:cyan_stained_glass_pane": CyanStainedGlassPane,
+    "minecraft:cyan_terracotta": CyanTerracotta,
+    "minecraft:cyan_wool": CyanWool,
+    "minecraft:dark_oak_button": DarkOakButton,
+    "minecraft:dark_oak_door": DarkOakDoor,
+    "minecraft:dark_oak_fence": DarkOakFence,
+    "minecraft:dark_oak_fence_gate": DarkOakFenceGate,
+    "minecraft:dark_oak_hanging_sign": DarkOakHangingSign,
+    "minecraft:dark_oak_log": DarkOakLog,
+    "minecraft:dark_oak_planks": DarkOakPlanks,
+    "minecraft:dark_oak_pressure_plate": DarkOakPressurePlate,
+    "minecraft:dark_oak_stairs": DarkOakStairs,
+    "minecraft:dark_oak_trapdoor": DarkOakTrapdoor,
+    "minecraft:dark_prismarine_stairs": DarkPrismarineStairs,
+    "minecraft:darkoak_standing_sign": DarkoakStandingSign,
+    "minecraft:darkoak_wall_sign": DarkoakWallSign,
+    "minecraft:daylight_detector": DaylightDetector,
+    "minecraft:daylight_detector_inverted": DaylightDetectorInverted,
+    "minecraft:dead_brain_coral": DeadBrainCoral,
+    "minecraft:dead_bubble_coral": DeadBubbleCoral,
+    "minecraft:dead_fire_coral": DeadFireCoral,
+    "minecraft:dead_horn_coral": DeadHornCoral,
+    "minecraft:dead_tube_coral": DeadTubeCoral,
+    "minecraft:deadbush": Deadbush,
+    "minecraft:decorated_pot": DecoratedPot,
+    "minecraft:deepslate": Deepslate,
+    "minecraft:deepslate_brick_double_slab": DeepslateBrickDoubleSlab,
+    "minecraft:deepslate_brick_slab": DeepslateBrickSlab,
+    "minecraft:deepslate_brick_stairs": DeepslateBrickStairs,
+    "minecraft:deepslate_brick_wall": DeepslateBrickWall,
+    "minecraft:deepslate_bricks": DeepslateBricks,
+    "minecraft:deepslate_coal_ore": DeepslateCoalOre,
+    "minecraft:deepslate_copper_ore": DeepslateCopperOre,
+    "minecraft:deepslate_diamond_ore": DeepslateDiamondOre,
+    "minecraft:deepslate_emerald_ore": DeepslateEmeraldOre,
+    "minecraft:deepslate_gold_ore": DeepslateGoldOre,
+    "minecraft:deepslate_iron_ore": DeepslateIronOre,
+    "minecraft:deepslate_lapis_ore": DeepslateLapisOre,
+    "minecraft:deepslate_redstone_ore": DeepslateRedstoneOre,
+    "minecraft:deepslate_tile_double_slab": DeepslateTileDoubleSlab,
+    "minecraft:deepslate_tile_slab": DeepslateTileSlab,
+    "minecraft:deepslate_tile_stairs": DeepslateTileStairs,
+    "minecraft:deepslate_tile_wall": DeepslateTileWall,
+    "minecraft:deepslate_tiles": DeepslateTiles,
+    "minecraft:deny": Deny,
+    "minecraft:detector_rail": DetectorRail,
+    "minecraft:diamond_block": DiamondBlock,
+    "minecraft:diamond_ore": DiamondOre,
+    "minecraft:diorite": Diorite,
+    "minecraft:diorite_stairs": DioriteStairs,
+    "minecraft:dirt": Dirt,
+    "minecraft:dirt_with_roots": DirtWithRoots,
+    "minecraft:dispenser": Dispenser,
+    "minecraft:double_cut_copper_slab": DoubleCutCopperSlab,
+    "minecraft:double_plant": DoublePlant,
+    "minecraft:double_stone_block_slab": DoubleStoneBlockSlab,
+    "minecraft:double_stone_block_slab2": DoubleStoneBlockSlab2,
+    "minecraft:double_stone_block_slab3": DoubleStoneBlockSlab3,
+    "minecraft:double_stone_block_slab4": DoubleStoneBlockSlab4,
+    "minecraft:double_wooden_slab": DoubleWoodenSlab,
+    "minecraft:dragon_egg": DragonEgg,
+    "minecraft:dried_kelp_block": DriedKelpBlock,
+    "minecraft:dripstone_block": DripstoneBlock,
+    "minecraft:dropper": Dropper,
+    "minecraft:element_0": Element0,
+    "minecraft:element_1": Element1,
+    "minecraft:element_10": Element10,
+    "minecraft:element_100": Element100,
+    "minecraft:element_101": Element101,
+    "minecraft:element_102": Element102,
+    "minecraft:element_103": Element103,
+    "minecraft:element_104": Element104,
+    "minecraft:element_105": Element105,
+    "minecraft:element_106": Element106,
+    "minecraft:element_107": Element107,
+    "minecraft:element_108": Element108,
+    "minecraft:element_109": Element109,
+    "minecraft:element_11": Element11,
+    "minecraft:element_110": Element110,
+    "minecraft:element_111": Element111,
+    "minecraft:element_112": Element112,
+    "minecraft:element_113": Element113,
+    "minecraft:element_114": Element114,
+    "minecraft:element_115": Element115,
+    "minecraft:element_116": Element116,
+    "minecraft:element_117": Element117,
+    "minecraft:element_118": Element118,
+    "minecraft:element_12": Element12,
+    "minecraft:element_13": Element13,
+    "minecraft:element_14": Element14,
+    "minecraft:element_15": Element15,
+    "minecraft:element_16": Element16,
+    "minecraft:element_17": Element17,
+    "minecraft:element_18": Element18,
+    "minecraft:element_19": Element19,
+    "minecraft:element_2": Element2,
+    "minecraft:element_20": Element20,
+    "minecraft:element_21": Element21,
+    "minecraft:element_22": Element22,
+    "minecraft:element_23": Element23,
+    "minecraft:element_24": Element24,
+    "minecraft:element_25": Element25,
+    "minecraft:element_26": Element26,
+    "minecraft:element_27": Element27,
+    "minecraft:element_28": Element28,
+    "minecraft:element_29": Element29,
+    "minecraft:element_3": Element3,
+    "minecraft:element_30": Element30,
+    "minecraft:element_31": Element31,
+    "minecraft:element_32": Element32,
+    "minecraft:element_33": Element33,
+    "minecraft:element_34": Element34,
+    "minecraft:element_35": Element35,
+    "minecraft:element_36": Element36,
+    "minecraft:element_37": Element37,
+    "minecraft:element_38": Element38,
+    "minecraft:element_39": Element39,
+    "minecraft:element_4": Element4,
+    "minecraft:element_40": Element40,
+    "minecraft:element_41": Element41,
+    "minecraft:element_42": Element42,
+    "minecraft:element_43": Element43,
+    "minecraft:element_44": Element44,
+    "minecraft:element_45": Element45,
+    "minecraft:element_46": Element46,
+    "minecraft:element_47": Element47,
+    "minecraft:element_48": Element48,
+    "minecraft:element_49": Element49,
+    "minecraft:element_5": Element5,
+    "minecraft:element_50": Element50,
+    "minecraft:element_51": Element51,
+    "minecraft:element_52": Element52,
+    "minecraft:element_53": Element53,
+    "minecraft:element_54": Element54,
+    "minecraft:element_55": Element55,
+    "minecraft:element_56": Element56,
+    "minecraft:element_57": Element57,
+    "minecraft:element_58": Element58,
+    "minecraft:element_59": Element59,
+    "minecraft:element_6": Element6,
+    "minecraft:element_60": Element60,
+    "minecraft:element_61": Element61,
+    "minecraft:element_62": Element62,
+    "minecraft:element_63": Element63,
+    "minecraft:element_64": Element64,
+    "minecraft:element_65": Element65,
+    "minecraft:element_66": Element66,
+    "minecraft:element_67": Element67,
+    "minecraft:element_68": Element68,
+    "minecraft:element_69": Element69,
+    "minecraft:element_7": Element7,
+    "minecraft:element_70": Element70,
+    "minecraft:element_71": Element71,
+    "minecraft:element_72": Element72,
+    "minecraft:element_73": Element73,
+    "minecraft:element_74": Element74,
+    "minecraft:element_75": Element75,
+    "minecraft:element_76": Element76,
+    "minecraft:element_77": Element77,
+    "minecraft:element_78": Element78,
+    "minecraft:element_79": Element79,
+    "minecraft:element_8": Element8,
+    "minecraft:element_80": Element80,
+    "minecraft:element_81": Element81,
+    "minecraft:element_82": Element82,
+    "minecraft:element_83": Element83,
+    "minecraft:element_84": Element84,
+    "minecraft:element_85": Element85,
+    "minecraft:element_86": Element86,
+    "minecraft:element_87": Element87,
+    "minecraft:element_88": Element88,
+    "minecraft:element_89": Element89,
+    "minecraft:element_9": Element9,
+    "minecraft:element_90": Element90,
+    "minecraft:element_91": Element91,
+    "minecraft:element_92": Element92,
+    "minecraft:element_93": Element93,
+    "minecraft:element_94": Element94,
+    "minecraft:element_95": Element95,
+    "minecraft:element_96": Element96,
+    "minecraft:element_97": Element97,
+    "minecraft:element_98": Element98,
+    "minecraft:element_99": Element99,
+    "minecraft:emerald_block": EmeraldBlock,
+    "minecraft:emerald_ore": EmeraldOre,
+    "minecraft:enchanting_table": EnchantingTable,
+    "minecraft:end_brick_stairs": EndBrickStairs,
+    "minecraft:end_bricks": EndBricks,
+    "minecraft:end_gateway": EndGateway,
+    "minecraft:end_portal": EndPortal,
+    "minecraft:end_portal_frame": EndPortalFrame,
+    "minecraft:end_rod": EndRod,
+    "minecraft:end_stone": EndStone,
+    "minecraft:ender_chest": EnderChest,
+    "minecraft:exposed_chiseled_copper": ExposedChiseledCopper,
+    "minecraft:exposed_copper": ExposedCopper,
+    "minecraft:exposed_copper_bulb": ExposedCopperBulb,
+    "minecraft:exposed_copper_door": ExposedCopperDoor,
+    "minecraft:exposed_copper_grate": ExposedCopperGrate,
+    "minecraft:exposed_copper_trapdoor": ExposedCopperTrapdoor,
+    "minecraft:exposed_cut_copper": ExposedCutCopper,
+    "minecraft:exposed_cut_copper_slab": ExposedCutCopperSlab,
+    "minecraft:exposed_cut_copper_stairs": ExposedCutCopperStairs,
+    "minecraft:exposed_double_cut_copper_slab": ExposedDoubleCutCopperSlab,
+    "minecraft:farmland": Farmland,
+    "minecraft:fence_gate": FenceGate,
+    "minecraft:fire": Fire,
+    "minecraft:fire_coral": FireCoral,
+    "minecraft:fletching_table": FletchingTable,
+    "minecraft:flower_pot": FlowerPot,
+    "minecraft:flowering_azalea": FloweringAzalea,
+    "minecraft:flowing_lava": FlowingLava,
+    "minecraft:flowing_water": FlowingWater,
+    "minecraft:frame": Frame,
+    "minecraft:frog_spawn": FrogSpawn,
+    "minecraft:frosted_ice": FrostedIce,
+    "minecraft:furnace": Furnace,
+    "minecraft:gilded_blackstone": GildedBlackstone,
+    "minecraft:glass": Glass,
+    "minecraft:glass_pane": GlassPane,
+    "minecraft:glow_frame": GlowFrame,
+    "minecraft:glow_lichen": GlowLichen,
+    "minecraft:glowingobsidian": Glowingobsidian,
+    "minecraft:glowstone": Glowstone,
+    "minecraft:gold_block": GoldBlock,
+    "minecraft:gold_ore": GoldOre,
+    "minecraft:golden_rail": GoldenRail,
+    "minecraft:granite": Granite,
+    "minecraft:granite_stairs": GraniteStairs,
+    "minecraft:grass": Grass,
+    "minecraft:grass_path": GrassPath,
+    "minecraft:gravel": Gravel,
+    "minecraft:gray_candle": GrayCandle,
+    "minecraft:gray_candle_cake": GrayCandleCake,
+    "minecraft:gray_carpet": GrayCarpet,
+    "minecraft:gray_concrete": GrayConcrete,
+    "minecraft:gray_concrete_powder": GrayConcretePowder,
+    "minecraft:gray_glazed_terracotta": GrayGlazedTerracotta,
+    "minecraft:gray_shulker_box": GrayShulkerBox,
+    "minecraft:gray_stained_glass": GrayStainedGlass,
+    "minecraft:gray_stained_glass_pane": GrayStainedGlassPane,
+    "minecraft:gray_terracotta": GrayTerracotta,
+    "minecraft:gray_wool": GrayWool,
+    "minecraft:green_candle": GreenCandle,
+    "minecraft:green_candle_cake": GreenCandleCake,
+    "minecraft:green_carpet": GreenCarpet,
+    "minecraft:green_concrete": GreenConcrete,
+    "minecraft:green_concrete_powder": GreenConcretePowder,
+    "minecraft:green_glazed_terracotta": GreenGlazedTerracotta,
+    "minecraft:green_shulker_box": GreenShulkerBox,
+    "minecraft:green_stained_glass": GreenStainedGlass,
+    "minecraft:green_stained_glass_pane": GreenStainedGlassPane,
+    "minecraft:green_terracotta": GreenTerracotta,
+    "minecraft:green_wool": GreenWool,
+    "minecraft:grindstone": Grindstone,
+    "minecraft:hanging_roots": HangingRoots,
+    "minecraft:hard_black_stained_glass": HardBlackStainedGlass,
+    "minecraft:hard_black_stained_glass_pane": HardBlackStainedGlassPane,
+    "minecraft:hard_blue_stained_glass": HardBlueStainedGlass,
+    "minecraft:hard_blue_stained_glass_pane": HardBlueStainedGlassPane,
+    "minecraft:hard_brown_stained_glass": HardBrownStainedGlass,
+    "minecraft:hard_brown_stained_glass_pane": HardBrownStainedGlassPane,
+    "minecraft:hard_cyan_stained_glass": HardCyanStainedGlass,
+    "minecraft:hard_cyan_stained_glass_pane": HardCyanStainedGlassPane,
+    "minecraft:hard_glass": HardGlass,
+    "minecraft:hard_glass_pane": HardGlassPane,
+    "minecraft:hard_gray_stained_glass": HardGrayStainedGlass,
+    "minecraft:hard_gray_stained_glass_pane": HardGrayStainedGlassPane,
+    "minecraft:hard_green_stained_glass": HardGreenStainedGlass,
+    "minecraft:hard_green_stained_glass_pane": HardGreenStainedGlassPane,
+    "minecraft:hard_light_blue_stained_glass": HardLightBlueStainedGlass,
+    "minecraft:hard_light_blue_stained_glass_pane": HardLightBlueStainedGlassPane,
+    "minecraft:hard_light_gray_stained_glass": HardLightGrayStainedGlass,
+    "minecraft:hard_light_gray_stained_glass_pane": HardLightGrayStainedGlassPane,
+    "minecraft:hard_lime_stained_glass": HardLimeStainedGlass,
+    "minecraft:hard_lime_stained_glass_pane": HardLimeStainedGlassPane,
+    "minecraft:hard_magenta_stained_glass": HardMagentaStainedGlass,
+    "minecraft:hard_magenta_stained_glass_pane": HardMagentaStainedGlassPane,
+    "minecraft:hard_orange_stained_glass": HardOrangeStainedGlass,
+    "minecraft:hard_orange_stained_glass_pane": HardOrangeStainedGlassPane,
+    "minecraft:hard_pink_stained_glass": HardPinkStainedGlass,
+    "minecraft:hard_pink_stained_glass_pane": HardPinkStainedGlassPane,
+    "minecraft:hard_purple_stained_glass": HardPurpleStainedGlass,
+    "minecraft:hard_purple_stained_glass_pane": HardPurpleStainedGlassPane,
+    "minecraft:hard_red_stained_glass": HardRedStainedGlass,
+    "minecraft:hard_red_stained_glass_pane": HardRedStainedGlassPane,
+    "minecraft:hard_white_stained_glass": HardWhiteStainedGlass,
+    "minecraft:hard_white_stained_glass_pane": HardWhiteStainedGlassPane,
+    "minecraft:hard_yellow_stained_glass": HardYellowStainedGlass,
+    "minecraft:hard_yellow_stained_glass_pane": HardYellowStainedGlassPane,
+    "minecraft:hardened_clay": HardenedClay,
+    "minecraft:hay_block": HayBlock,
+    "minecraft:heavy_weighted_pressure_plate": HeavyWeightedPressurePlate,
+    "minecraft:honey_block": HoneyBlock,
+    "minecraft:honeycomb_block": HoneycombBlock,
+    "minecraft:hopper": Hopper,
+    "minecraft:horn_coral": HornCoral,
+    "minecraft:ice": Ice,
+    "minecraft:infested_deepslate": InfestedDeepslate,
+    "minecraft:info_update": InfoUpdate,
+    "minecraft:info_update2": InfoUpdate2,
+    "minecraft:invisible_bedrock": InvisibleBedrock,
+    "minecraft:iron_bars": IronBars,
+    "minecraft:iron_block": IronBlock,
+    "minecraft:iron_door": IronDoor,
+    "minecraft:iron_ore": IronOre,
+    "minecraft:iron_trapdoor": IronTrapdoor,
+    "minecraft:jigsaw": Jigsaw,
+    "minecraft:jukebox": Jukebox,
+    "minecraft:jungle_button": JungleButton,
+    "minecraft:jungle_door": JungleDoor,
+    "minecraft:jungle_fence": JungleFence,
+    "minecraft:jungle_fence_gate": JungleFenceGate,
+    "minecraft:jungle_hanging_sign": JungleHangingSign,
+    "minecraft:jungle_log": JungleLog,
+    "minecraft:jungle_planks": JunglePlanks,
+    "minecraft:jungle_pressure_plate": JunglePressurePlate,
+    "minecraft:jungle_stairs": JungleStairs,
+    "minecraft:jungle_standing_sign": JungleStandingSign,
+    "minecraft:jungle_trapdoor": JungleTrapdoor,
+    "minecraft:jungle_wall_sign": JungleWallSign,
+    "minecraft:kelp": Kelp,
+    "minecraft:ladder": Ladder,
+    "minecraft:lantern": Lantern,
+    "minecraft:lapis_block": LapisBlock,
+    "minecraft:lapis_ore": LapisOre,
+    "minecraft:large_amethyst_bud": LargeAmethystBud,
+    "minecraft:lava": Lava,
+    "minecraft:leaves": Leaves,
+    "minecraft:leaves2": Leaves2,
+    "minecraft:lectern": Lectern,
+    "minecraft:lever": Lever,
+    "minecraft:light_block": LightBlock,
+    "minecraft:light_blue_candle": LightBlueCandle,
+    "minecraft:light_blue_candle_cake": LightBlueCandleCake,
+    "minecraft:light_blue_carpet": LightBlueCarpet,
+    "minecraft:light_blue_concrete": LightBlueConcrete,
+    "minecraft:light_blue_concrete_powder": LightBlueConcretePowder,
+    "minecraft:light_blue_glazed_terracotta": LightBlueGlazedTerracotta,
+    "minecraft:light_blue_shulker_box": LightBlueShulkerBox,
+    "minecraft:light_blue_stained_glass": LightBlueStainedGlass,
+    "minecraft:light_blue_stained_glass_pane": LightBlueStainedGlassPane,
+    "minecraft:light_blue_terracotta": LightBlueTerracotta,
+    "minecraft:light_blue_wool": LightBlueWool,
+    "minecraft:light_gray_candle": LightGrayCandle,
+    "minecraft:light_gray_candle_cake": LightGrayCandleCake,
+    "minecraft:light_gray_carpet": LightGrayCarpet,
+    "minecraft:light_gray_concrete": LightGrayConcrete,
+    "minecraft:light_gray_concrete_powder": LightGrayConcretePowder,
+    "minecraft:light_gray_shulker_box": LightGrayShulkerBox,
+    "minecraft:light_gray_stained_glass": LightGrayStainedGlass,
+    "minecraft:light_gray_stained_glass_pane": LightGrayStainedGlassPane,
+    "minecraft:light_gray_terracotta": LightGrayTerracotta,
+    "minecraft:light_gray_wool": LightGrayWool,
+    "minecraft:light_weighted_pressure_plate": LightWeightedPressurePlate,
+    "minecraft:lightning_rod": LightningRod,
+    "minecraft:lime_candle": LimeCandle,
+    "minecraft:lime_candle_cake": LimeCandleCake,
+    "minecraft:lime_carpet": LimeCarpet,
+    "minecraft:lime_concrete": LimeConcrete,
+    "minecraft:lime_concrete_powder": LimeConcretePowder,
+    "minecraft:lime_glazed_terracotta": LimeGlazedTerracotta,
+    "minecraft:lime_shulker_box": LimeShulkerBox,
+    "minecraft:lime_stained_glass": LimeStainedGlass,
+    "minecraft:lime_stained_glass_pane": LimeStainedGlassPane,
+    "minecraft:lime_terracotta": LimeTerracotta,
+    "minecraft:lime_wool": LimeWool,
+    "minecraft:lit_blast_furnace": LitBlastFurnace,
+    "minecraft:lit_deepslate_redstone_ore": LitDeepslateRedstoneOre,
+    "minecraft:lit_furnace": LitFurnace,
+    "minecraft:lit_pumpkin": LitPumpkin,
+    "minecraft:lit_redstone_lamp": LitRedstoneLamp,
+    "minecraft:lit_redstone_ore": LitRedstoneOre,
+    "minecraft:lit_smoker": LitSmoker,
+    "minecraft:lodestone": Lodestone,
+    "minecraft:loom": Loom,
+    "minecraft:magenta_candle": MagentaCandle,
+    "minecraft:magenta_candle_cake": MagentaCandleCake,
+    "minecraft:magenta_carpet": MagentaCarpet,
+    "minecraft:magenta_concrete": MagentaConcrete,
+    "minecraft:magenta_concrete_powder": MagentaConcretePowder,
+    "minecraft:magenta_glazed_terracotta": MagentaGlazedTerracotta,
+    "minecraft:magenta_shulker_box": MagentaShulkerBox,
+    "minecraft:magenta_stained_glass": MagentaStainedGlass,
+    "minecraft:magenta_stained_glass_pane": MagentaStainedGlassPane,
+    "minecraft:magenta_terracotta": MagentaTerracotta,
+    "minecraft:magenta_wool": MagentaWool,
+    "minecraft:magma": Magma,
+    "minecraft:mangrove_button": MangroveButton,
+    "minecraft:mangrove_door": MangroveDoor,
+    "minecraft:mangrove_double_slab": MangroveDoubleSlab,
+    "minecraft:mangrove_fence": MangroveFence,
+    "minecraft:mangrove_fence_gate": MangroveFenceGate,
+    "minecraft:mangrove_hanging_sign": MangroveHangingSign,
+    "minecraft:mangrove_leaves": MangroveLeaves,
+    "minecraft:mangrove_log": MangroveLog,
+    "minecraft:mangrove_planks": MangrovePlanks,
+    "minecraft:mangrove_pressure_plate": MangrovePressurePlate,
+    "minecraft:mangrove_propagule": MangrovePropagule,
+    "minecraft:mangrove_roots": MangroveRoots,
+    "minecraft:mangrove_slab": MangroveSlab,
+    "minecraft:mangrove_stairs": MangroveStairs,
+    "minecraft:mangrove_standing_sign": MangroveStandingSign,
+    "minecraft:mangrove_trapdoor": MangroveTrapdoor,
+    "minecraft:mangrove_wall_sign": MangroveWallSign,
+    "minecraft:mangrove_wood": MangroveWood,
+    "minecraft:medium_amethyst_bud": MediumAmethystBud,
+    "minecraft:melon_block": MelonBlock,
+    "minecraft:melon_stem": MelonStem,
+    "minecraft:mob_spawner": MobSpawner,
+    "minecraft:monster_egg": MonsterEgg,
+    "minecraft:moss_block": MossBlock,
+    "minecraft:moss_carpet": MossCarpet,
+    "minecraft:mossy_cobblestone": MossyCobblestone,
+    "minecraft:mossy_cobblestone_stairs": MossyCobblestoneStairs,
+    "minecraft:mossy_stone_brick_stairs": MossyStoneBrickStairs,
+    "minecraft:moving_block": MovingBlock,
+    "minecraft:mud": Mud,
+    "minecraft:mud_brick_double_slab": MudBrickDoubleSlab,
+    "minecraft:mud_brick_slab": MudBrickSlab,
+    "minecraft:mud_brick_stairs": MudBrickStairs,
+    "minecraft:mud_brick_wall": MudBrickWall,
+    "minecraft:mud_bricks": MudBricks,
+    "minecraft:muddy_mangrove_roots": MuddyMangroveRoots,
+    "minecraft:mycelium": Mycelium,
+    "minecraft:nether_brick": NetherBrick,
+    "minecraft:nether_brick_fence": NetherBrickFence,
+    "minecraft:nether_brick_stairs": NetherBrickStairs,
+    "minecraft:nether_gold_ore": NetherGoldOre,
+    "minecraft:nether_sprouts": NetherSprouts,
+    "minecraft:nether_wart": NetherWart,
+    "minecraft:nether_wart_block": NetherWartBlock,
+    "minecraft:netherite_block": NetheriteBlock,
+    "minecraft:netherrack": Netherrack,
+    "minecraft:netherreactor": Netherreactor,
+    "minecraft:normal_stone_stairs": NormalStoneStairs,
+    "minecraft:noteblock": Noteblock,
+    "minecraft:oak_fence": OakFence,
+    "minecraft:oak_hanging_sign": OakHangingSign,
+    "minecraft:oak_log": OakLog,
+    "minecraft:oak_planks": OakPlanks,
+    "minecraft:oak_stairs": OakStairs,
+    "minecraft:observer": Observer,
+    "minecraft:obsidian": Obsidian,
+    "minecraft:ochre_froglight": OchreFroglight,
+    "minecraft:orange_candle": OrangeCandle,
+    "minecraft:orange_candle_cake": OrangeCandleCake,
+    "minecraft:orange_carpet": OrangeCarpet,
+    "minecraft:orange_concrete": OrangeConcrete,
+    "minecraft:orange_concrete_powder": OrangeConcretePowder,
+    "minecraft:orange_glazed_terracotta": OrangeGlazedTerracotta,
+    "minecraft:orange_shulker_box": OrangeShulkerBox,
+    "minecraft:orange_stained_glass": OrangeStainedGlass,
+    "minecraft:orange_stained_glass_pane": OrangeStainedGlassPane,
+    "minecraft:orange_terracotta": OrangeTerracotta,
+    "minecraft:orange_wool": OrangeWool,
+    "minecraft:oxidized_chiseled_copper": OxidizedChiseledCopper,
+    "minecraft:oxidized_copper": OxidizedCopper,
+    "minecraft:oxidized_copper_bulb": OxidizedCopperBulb,
+    "minecraft:oxidized_copper_door": OxidizedCopperDoor,
+    "minecraft:oxidized_copper_grate": OxidizedCopperGrate,
+    "minecraft:oxidized_copper_trapdoor": OxidizedCopperTrapdoor,
+    "minecraft:oxidized_cut_copper": OxidizedCutCopper,
+    "minecraft:oxidized_cut_copper_slab": OxidizedCutCopperSlab,
+    "minecraft:oxidized_cut_copper_stairs": OxidizedCutCopperStairs,
+    "minecraft:oxidized_double_cut_copper_slab": OxidizedDoubleCutCopperSlab,
+    "minecraft:packed_ice": PackedIce,
+    "minecraft:packed_mud": PackedMud,
+    "minecraft:pearlescent_froglight": PearlescentFroglight,
+    "minecraft:pink_candle": PinkCandle,
+    "minecraft:pink_candle_cake": PinkCandleCake,
+    "minecraft:pink_carpet": PinkCarpet,
+    "minecraft:pink_concrete": PinkConcrete,
+    "minecraft:pink_concrete_powder": PinkConcretePowder,
+    "minecraft:pink_glazed_terracotta": PinkGlazedTerracotta,
+    "minecraft:pink_petals": PinkPetals,
+    "minecraft:pink_shulker_box": PinkShulkerBox,
+    "minecraft:pink_stained_glass": PinkStainedGlass,
+    "minecraft:pink_stained_glass_pane": PinkStainedGlassPane,
+    "minecraft:pink_terracotta": PinkTerracotta,
+    "minecraft:pink_wool": PinkWool,
+    "minecraft:piston": Piston,
+    "minecraft:piston_arm_collision": PistonArmCollision,
+    "minecraft:pitcher_crop": PitcherCrop,
+    "minecraft:pitcher_plant": PitcherPlant,
+    "minecraft:podzol": Podzol,
+    "minecraft:pointed_dripstone": PointedDripstone,
+    "minecraft:polished_andesite": PolishedAndesite,
+    "minecraft:polished_andesite_stairs": PolishedAndesiteStairs,
+    "minecraft:polished_basalt": PolishedBasalt,
+    "minecraft:polished_blackstone": PolishedBlackstone,
+    "minecraft:polished_blackstone_brick_double_slab": PolishedBlackstoneBrickDoubleSlab,
+    "minecraft:polished_blackstone_brick_slab": PolishedBlackstoneBrickSlab,
+    "minecraft:polished_blackstone_brick_stairs": PolishedBlackstoneBrickStairs,
+    "minecraft:polished_blackstone_brick_wall": PolishedBlackstoneBrickWall,
+    "minecraft:polished_blackstone_bricks": PolishedBlackstoneBricks,
+    "minecraft:polished_blackstone_button": PolishedBlackstoneButton,
+    "minecraft:polished_blackstone_double_slab": PolishedBlackstoneDoubleSlab,
+    "minecraft:polished_blackstone_pressure_plate": PolishedBlackstonePressurePlate,
+    "minecraft:polished_blackstone_slab": PolishedBlackstoneSlab,
+    "minecraft:polished_blackstone_stairs": PolishedBlackstoneStairs,
+    "minecraft:polished_blackstone_wall": PolishedBlackstoneWall,
+    "minecraft:polished_deepslate": PolishedDeepslate,
+    "minecraft:polished_deepslate_double_slab": PolishedDeepslateDoubleSlab,
+    "minecraft:polished_deepslate_slab": PolishedDeepslateSlab,
+    "minecraft:polished_deepslate_stairs": PolishedDeepslateStairs,
+    "minecraft:polished_deepslate_wall": PolishedDeepslateWall,
+    "minecraft:polished_diorite": PolishedDiorite,
+    "minecraft:polished_diorite_stairs": PolishedDioriteStairs,
+    "minecraft:polished_granite": PolishedGranite,
+    "minecraft:polished_granite_stairs": PolishedGraniteStairs,
+    "minecraft:polished_tuff": PolishedTuff,
+    "minecraft:polished_tuff_double_slab": PolishedTuffDoubleSlab,
+    "minecraft:polished_tuff_slab": PolishedTuffSlab,
+    "minecraft:polished_tuff_stairs": PolishedTuffStairs,
+    "minecraft:polished_tuff_wall": PolishedTuffWall,
+    "minecraft:portal": Portal,
+    "minecraft:potatoes": Potatoes,
+    "minecraft:powder_snow": PowderSnow,
+    "minecraft:powered_comparator": PoweredComparator,
+    "minecraft:powered_repeater": PoweredRepeater,
+    "minecraft:prismarine": Prismarine,
+    "minecraft:prismarine_bricks_stairs": PrismarineBricksStairs,
+    "minecraft:prismarine_stairs": PrismarineStairs,
+    "minecraft:pumpkin": Pumpkin,
+    "minecraft:pumpkin_stem": PumpkinStem,
+    "minecraft:purple_candle": PurpleCandle,
+    "minecraft:purple_candle_cake": PurpleCandleCake,
+    "minecraft:purple_carpet": PurpleCarpet,
+    "minecraft:purple_concrete": PurpleConcrete,
+    "minecraft:purple_concrete_powder": PurpleConcretePowder,
+    "minecraft:purple_glazed_terracotta": PurpleGlazedTerracotta,
+    "minecraft:purple_shulker_box": PurpleShulkerBox,
+    "minecraft:purple_stained_glass": PurpleStainedGlass,
+    "minecraft:purple_stained_glass_pane": PurpleStainedGlassPane,
+    "minecraft:purple_terracotta": PurpleTerracotta,
+    "minecraft:purple_wool": PurpleWool,
+    "minecraft:purpur_block": PurpurBlock,
+    "minecraft:purpur_stairs": PurpurStairs,
+    "minecraft:quartz_block": QuartzBlock,
+    "minecraft:quartz_bricks": QuartzBricks,
+    "minecraft:quartz_ore": QuartzOre,
+    "minecraft:quartz_stairs": QuartzStairs,
+    "minecraft:rail": Rail,
+    "minecraft:raw_copper_block": RawCopperBlock,
+    "minecraft:raw_gold_block": RawGoldBlock,
+    "minecraft:raw_iron_block": RawIronBlock,
+    "minecraft:red_candle": RedCandle,
+    "minecraft:red_candle_cake": RedCandleCake,
+    "minecraft:red_carpet": RedCarpet,
+    "minecraft:red_concrete": RedConcrete,
+    "minecraft:red_concrete_powder": RedConcretePowder,
+    "minecraft:red_flower": RedFlower,
+    "minecraft:red_glazed_terracotta": RedGlazedTerracotta,
+    "minecraft:red_mushroom": RedMushroom,
+    "minecraft:red_mushroom_block": RedMushroomBlock,
+    "minecraft:red_nether_brick": RedNetherBrick,
+    "minecraft:red_nether_brick_stairs": RedNetherBrickStairs,
+    "minecraft:red_sandstone": RedSandstone,
+    "minecraft:red_sandstone_stairs": RedSandstoneStairs,
+    "minecraft:red_shulker_box": RedShulkerBox,
+    "minecraft:red_stained_glass": RedStainedGlass,
+    "minecraft:red_stained_glass_pane": RedStainedGlassPane,
+    "minecraft:red_terracotta": RedTerracotta,
+    "minecraft:red_wool": RedWool,
+    "minecraft:redstone_block": RedstoneBlock,
+    "minecraft:redstone_lamp": RedstoneLamp,
+    "minecraft:redstone_ore": RedstoneOre,
+    "minecraft:redstone_torch": RedstoneTorch,
+    "minecraft:redstone_wire": RedstoneWire,
+    "minecraft:reeds": Reeds,
+    "minecraft:reinforced_deepslate": ReinforcedDeepslate,
+    "minecraft:repeating_command_block": RepeatingCommandBlock,
+    "minecraft:reserved6": Reserved6,
+    "minecraft:respawn_anchor": RespawnAnchor,
+    "minecraft:sand": Sand,
+    "minecraft:sandstone": Sandstone,
+    "minecraft:sandstone_stairs": SandstoneStairs,
+    "minecraft:sapling": Sapling,
+    "minecraft:scaffolding": Scaffolding,
+    "minecraft:sculk": Sculk,
+    "minecraft:sculk_catalyst": SculkCatalyst,
+    "minecraft:sculk_sensor": SculkSensor,
+    "minecraft:sculk_shrieker": SculkShrieker,
+    "minecraft:sculk_vein": SculkVein,
+    "minecraft:sea_lantern": SeaLantern,
+    "minecraft:sea_pickle": SeaPickle,
+    "minecraft:seagrass": Seagrass,
+    "minecraft:shroomlight": Shroomlight,
+    "minecraft:silver_glazed_terracotta": SilverGlazedTerracotta,
+    "minecraft:skull": Skull,
+    "minecraft:slime": Slime,
+    "minecraft:small_amethyst_bud": SmallAmethystBud,
+    "minecraft:small_dripleaf_block": SmallDripleafBlock,
+    "minecraft:smithing_table": SmithingTable,
+    "minecraft:smoker": Smoker,
+    "minecraft:smooth_basalt": SmoothBasalt,
+    "minecraft:smooth_quartz_stairs": SmoothQuartzStairs,
+    "minecraft:smooth_red_sandstone_stairs": SmoothRedSandstoneStairs,
+    "minecraft:smooth_sandstone_stairs": SmoothSandstoneStairs,
+    "minecraft:smooth_stone": SmoothStone,
+    "minecraft:sniffer_egg": SnifferEgg,
+    "minecraft:snow": Snow,
+    "minecraft:snow_layer": SnowLayer,
+    "minecraft:soul_campfire": SoulCampfire,
+    "minecraft:soul_fire": SoulFire,
+    "minecraft:soul_lantern": SoulLantern,
+    "minecraft:soul_sand": SoulSand,
+    "minecraft:soul_soil": SoulSoil,
+    "minecraft:soul_torch": SoulTorch,
+    "minecraft:sponge": Sponge,
+    "minecraft:spore_blossom": SporeBlossom,
+    "minecraft:spruce_button": SpruceButton,
+    "minecraft:spruce_door": SpruceDoor,
+    "minecraft:spruce_fence": SpruceFence,
+    "minecraft:spruce_fence_gate": SpruceFenceGate,
+    "minecraft:spruce_hanging_sign": SpruceHangingSign,
+    "minecraft:spruce_log": SpruceLog,
+    "minecraft:spruce_planks": SprucePlanks,
+    "minecraft:spruce_pressure_plate": SprucePressurePlate,
+    "minecraft:spruce_stairs": SpruceStairs,
+    "minecraft:spruce_standing_sign": SpruceStandingSign,
+    "minecraft:spruce_trapdoor": SpruceTrapdoor,
+    "minecraft:spruce_wall_sign": SpruceWallSign,
+    "minecraft:standing_banner": StandingBanner,
+    "minecraft:standing_sign": StandingSign,
+    "minecraft:sticky_piston": StickyPiston,
+    "minecraft:sticky_piston_arm_collision": StickyPistonArmCollision,
+    "minecraft:stone": Stone,
+    "minecraft:stone_block_slab": StoneBlockSlab,
+    "minecraft:stone_block_slab2": StoneBlockSlab2,
+    "minecraft:stone_block_slab3": StoneBlockSlab3,
+    "minecraft:stone_block_slab4": StoneBlockSlab4,
+    "minecraft:stone_brick_stairs": StoneBrickStairs,
+    "minecraft:stone_button": StoneButton,
+    "minecraft:stone_pressure_plate": StonePressurePlate,
+    "minecraft:stone_stairs": StoneStairs,
+    "minecraft:stonebrick": Stonebrick,
+    "minecraft:stonecutter": Stonecutter,
+    "minecraft:stonecutter_block": StonecutterBlock,
+    "minecraft:stripped_acacia_log": StrippedAcaciaLog,
+    "minecraft:stripped_bamboo_block": StrippedBambooBlock,
+    "minecraft:stripped_birch_log": StrippedBirchLog,
+    "minecraft:stripped_cherry_log": StrippedCherryLog,
+    "minecraft:stripped_cherry_wood": StrippedCherryWood,
+    "minecraft:stripped_crimson_hyphae": StrippedCrimsonHyphae,
+    "minecraft:stripped_crimson_stem": StrippedCrimsonStem,
+    "minecraft:stripped_dark_oak_log": StrippedDarkOakLog,
+    "minecraft:stripped_jungle_log": StrippedJungleLog,
+    "minecraft:stripped_mangrove_log": StrippedMangroveLog,
+    "minecraft:stripped_mangrove_wood": StrippedMangroveWood,
+    "minecraft:stripped_oak_log": StrippedOakLog,
+    "minecraft:stripped_spruce_log": StrippedSpruceLog,
+    "minecraft:stripped_warped_hyphae": StrippedWarpedHyphae,
+    "minecraft:stripped_warped_stem": StrippedWarpedStem,
+    "minecraft:structure_block": StructureBlock,
+    "minecraft:structure_void": StructureVoid,
+    "minecraft:suspicious_gravel": SuspiciousGravel,
+    "minecraft:suspicious_sand": SuspiciousSand,
+    "minecraft:sweet_berry_bush": SweetBerryBush,
+    "minecraft:tallgrass": Tallgrass,
+    "minecraft:target": Target,
+    "minecraft:tinted_glass": TintedGlass,
+    "minecraft:tnt": Tnt,
+    "minecraft:torch": Torch,
+    "minecraft:torchflower": Torchflower,
+    "minecraft:torchflower_crop": TorchflowerCrop,
+    "minecraft:trapdoor": Trapdoor,
+    "minecraft:trapped_chest": TrappedChest,
+    "minecraft:trial_spawner": TrialSpawner,
+    "minecraft:trip_wire": TripWire,
+    "minecraft:tripwire_hook": TripwireHook,
+    "minecraft:tube_coral": TubeCoral,
+    "minecraft:tuff": Tuff,
+    "minecraft:tuff_brick_double_slab": TuffBrickDoubleSlab,
+    "minecraft:tuff_brick_slab": TuffBrickSlab,
+    "minecraft:tuff_brick_stairs": TuffBrickStairs,
+    "minecraft:tuff_brick_wall": TuffBrickWall,
+    "minecraft:tuff_bricks": TuffBricks,
+    "minecraft:tuff_double_slab": TuffDoubleSlab,
+    "minecraft:tuff_slab": TuffSlab,
+    "minecraft:tuff_stairs": TuffStairs,
+    "minecraft:tuff_wall": TuffWall,
+    "minecraft:turtle_egg": TurtleEgg,
+    "minecraft:twisting_vines": TwistingVines,
+    "minecraft:underwater_torch": UnderwaterTorch,
+    "minecraft:undyed_shulker_box": UndyedShulkerBox,
+    "minecraft:unknown": Unknown,
+    "minecraft:unlit_redstone_torch": UnlitRedstoneTorch,
+    "minecraft:unpowered_comparator": UnpoweredComparator,
+    "minecraft:unpowered_repeater": UnpoweredRepeater,
+    "minecraft:verdant_froglight": VerdantFroglight,
+    "minecraft:vine": Vine,
+    "minecraft:wall_banner": WallBanner,
+    "minecraft:wall_sign": WallSign,
+    "minecraft:warped_button": WarpedButton,
+    "minecraft:warped_door": WarpedDoor,
+    "minecraft:warped_double_slab": WarpedDoubleSlab,
+    "minecraft:warped_fence": WarpedFence,
+    "minecraft:warped_fence_gate": WarpedFenceGate,
+    "minecraft:warped_fungus": WarpedFungus,
+    "minecraft:warped_hanging_sign": WarpedHangingSign,
+    "minecraft:warped_hyphae": WarpedHyphae,
+    "minecraft:warped_nylium": WarpedNylium,
+    "minecraft:warped_planks": WarpedPlanks,
+    "minecraft:warped_pressure_plate": WarpedPressurePlate,
+    "minecraft:warped_roots": WarpedRoots,
+    "minecraft:warped_slab": WarpedSlab,
+    "minecraft:warped_stairs": WarpedStairs,
+    "minecraft:warped_standing_sign": WarpedStandingSign,
+    "minecraft:warped_stem": WarpedStem,
+    "minecraft:warped_trapdoor": WarpedTrapdoor,
+    "minecraft:warped_wall_sign": WarpedWallSign,
+    "minecraft:warped_wart_block": WarpedWartBlock,
+    "minecraft:water": Water,
+    "minecraft:waterlily": Waterlily,
+    "minecraft:waxed_chiseled_copper": WaxedChiseledCopper,
+    "minecraft:waxed_copper": WaxedCopper,
+    "minecraft:waxed_copper_bulb": WaxedCopperBulb,
+    "minecraft:waxed_copper_door": WaxedCopperDoor,
+    "minecraft:waxed_copper_grate": WaxedCopperGrate,
+    "minecraft:waxed_copper_trapdoor": WaxedCopperTrapdoor,
+    "minecraft:waxed_cut_copper": WaxedCutCopper,
+    "minecraft:waxed_cut_copper_slab": WaxedCutCopperSlab,
+    "minecraft:waxed_cut_copper_stairs": WaxedCutCopperStairs,
+    "minecraft:waxed_double_cut_copper_slab": WaxedDoubleCutCopperSlab,
+    "minecraft:waxed_exposed_chiseled_copper": WaxedExposedChiseledCopper,
+    "minecraft:waxed_exposed_copper": WaxedExposedCopper,
+    "minecraft:waxed_exposed_copper_bulb": WaxedExposedCopperBulb,
+    "minecraft:waxed_exposed_copper_door": WaxedExposedCopperDoor,
+    "minecraft:waxed_exposed_copper_grate": WaxedExposedCopperGrate,
+    "minecraft:waxed_exposed_copper_trapdoor": WaxedExposedCopperTrapdoor,
+    "minecraft:waxed_exposed_cut_copper": WaxedExposedCutCopper,
+    "minecraft:waxed_exposed_cut_copper_slab": WaxedExposedCutCopperSlab,
+    "minecraft:waxed_exposed_cut_copper_stairs": WaxedExposedCutCopperStairs,
+    "minecraft:waxed_exposed_double_cut_copper_slab": WaxedExposedDoubleCutCopperSlab,
+    "minecraft:waxed_oxidized_chiseled_copper": WaxedOxidizedChiseledCopper,
+    "minecraft:waxed_oxidized_copper": WaxedOxidizedCopper,
+    "minecraft:waxed_oxidized_copper_bulb": WaxedOxidizedCopperBulb,
+    "minecraft:waxed_oxidized_copper_door": WaxedOxidizedCopperDoor,
+    "minecraft:waxed_oxidized_copper_grate": WaxedOxidizedCopperGrate,
+    "minecraft:waxed_oxidized_copper_trapdoor": WaxedOxidizedCopperTrapdoor,
+    "minecraft:waxed_oxidized_cut_copper": WaxedOxidizedCutCopper,
+    "minecraft:waxed_oxidized_cut_copper_slab": WaxedOxidizedCutCopperSlab,
+    "minecraft:waxed_oxidized_cut_copper_stairs": WaxedOxidizedCutCopperStairs,
+    "minecraft:waxed_oxidized_double_cut_copper_slab": WaxedOxidizedDoubleCutCopperSlab,
+    "minecraft:waxed_weathered_chiseled_copper": WaxedWeatheredChiseledCopper,
+    "minecraft:waxed_weathered_copper": WaxedWeatheredCopper,
+    "minecraft:waxed_weathered_copper_bulb": WaxedWeatheredCopperBulb,
+    "minecraft:waxed_weathered_copper_door": WaxedWeatheredCopperDoor,
+    "minecraft:waxed_weathered_copper_grate": WaxedWeatheredCopperGrate,
+    "minecraft:waxed_weathered_copper_trapdoor": WaxedWeatheredCopperTrapdoor,
+    "minecraft:waxed_weathered_cut_copper": WaxedWeatheredCutCopper,
+    "minecraft:waxed_weathered_cut_copper_slab": WaxedWeatheredCutCopperSlab,
+    "minecraft:waxed_weathered_cut_copper_stairs": WaxedWeatheredCutCopperStairs,
+    "minecraft:waxed_weathered_double_cut_copper_slab": WaxedWeatheredDoubleCutCopperSlab,
+    "minecraft:weathered_chiseled_copper": WeatheredChiseledCopper,
+    "minecraft:weathered_copper": WeatheredCopper,
+    "minecraft:weathered_copper_bulb": WeatheredCopperBulb,
+    "minecraft:weathered_copper_door": WeatheredCopperDoor,
+    "minecraft:weathered_copper_grate": WeatheredCopperGrate,
+    "minecraft:weathered_copper_trapdoor": WeatheredCopperTrapdoor,
+    "minecraft:weathered_cut_copper": WeatheredCutCopper,
+    "minecraft:weathered_cut_copper_slab": WeatheredCutCopperSlab,
+    "minecraft:weathered_cut_copper_stairs": WeatheredCutCopperStairs,
+    "minecraft:weathered_double_cut_copper_slab": WeatheredDoubleCutCopperSlab,
+    "minecraft:web": Web,
+    "minecraft:weeping_vines": WeepingVines,
+    "minecraft:wheat": Wheat,
+    "minecraft:white_candle": WhiteCandle,
+    "minecraft:white_candle_cake": WhiteCandleCake,
+    "minecraft:white_carpet": WhiteCarpet,
+    "minecraft:white_concrete": WhiteConcrete,
+    "minecraft:white_concrete_powder": WhiteConcretePowder,
+    "minecraft:white_glazed_terracotta": WhiteGlazedTerracotta,
+    "minecraft:white_shulker_box": WhiteShulkerBox,
+    "minecraft:white_stained_glass": WhiteStainedGlass,
+    "minecraft:white_stained_glass_pane": WhiteStainedGlassPane,
+    "minecraft:white_terracotta": WhiteTerracotta,
+    "minecraft:white_wool": WhiteWool,
+    "minecraft:wither_rose": WitherRose,
+    "minecraft:wood": Wood,
+    "minecraft:wooden_button": WoodenButton,
+    "minecraft:wooden_door": WoodenDoor,
+    "minecraft:wooden_pressure_plate": WoodenPressurePlate,
+    "minecraft:wooden_slab": WoodenSlab,
+    "minecraft:yellow_candle": YellowCandle,
+    "minecraft:yellow_candle_cake": YellowCandleCake,
+    "minecraft:yellow_carpet": YellowCarpet,
+    "minecraft:yellow_concrete": YellowConcrete,
+    "minecraft:yellow_concrete_powder": YellowConcretePowder,
+    "minecraft:yellow_flower": YellowFlower,
+    "minecraft:yellow_glazed_terracotta": YellowGlazedTerracotta,
+    "minecraft:yellow_shulker_box": YellowShulkerBox,
+    "minecraft:yellow_stained_glass": YellowStainedGlass,
+    "minecraft:yellow_stained_glass_pane": YellowStainedGlassPane,
+    "minecraft:yellow_terracotta": YellowTerracotta,
+    "minecraft:yellow_wool": YellowWool,
+}
