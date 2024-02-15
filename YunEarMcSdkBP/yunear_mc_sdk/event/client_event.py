@@ -1,0 +1,2 @@
+class ClientEvent(object):
+    pass

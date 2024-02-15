@@ -1,0 +1,2 @@
+class ServerEvent(object):
+    pass

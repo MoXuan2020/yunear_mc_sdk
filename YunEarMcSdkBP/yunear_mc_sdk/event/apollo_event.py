@@ -1,0 +1,2 @@
+class ApolloEvent(object):
+    pass
