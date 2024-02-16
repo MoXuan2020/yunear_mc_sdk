@@ -1,11 +1,14 @@
 # pylint: disable = invalid-name
 from yunear_mc_sdk import YunearMcSdk
-from yunear_mc_sdk.event.world.on_script_tick_client import OnScriptTickClient
+from yunear_mc_sdk.event.control.client_jump_button_press_down_event import (
+    ClientJumpButtonPressDownEvent,
+)
 
 
 @YunearMcSdk
 class YunearMcSdkTest(object):
 
-    @OnScriptTickClient
-    def OnScriptTickClient(self, args):
-        print(args)
+    @ClientJumpButtonPressDownEvent
+    def client_jump_button_press_down_event(self, event):
+        # type: (ClientJumpButtonPressDownEvent) -> None
+        event.args["continueJump"] = False
