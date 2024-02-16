@@ -1,7 +1,6 @@
 import mod.client.extraClientApi as clientApi
 import mod.server.extraServerApi as serverApi
 from mod.common.mod import Mod
-
 from yunear_mc_sdk.event.client_event import ClientEvent
 from yunear_mc_sdk.event.server_event import ServerEvent
 
@@ -22,7 +21,7 @@ class YunearMcSdk(object):
             if self.server is None:
                 self.server = serverApi.RegisterSystem(
                     "YunearMcSdk",
-                    "YunearMcSdkServer",
+                    "%sServer" % self.mod.__class__.__name__,
                     "yunear_mc_sdk.server.yunear_mc_sdk_server.YunearMcSdkServer",
                 )
                 for attr_name in dir(self.mod):
@@ -38,7 +37,7 @@ class YunearMcSdk(object):
                         )
             self.client = clientApi.RegisterSystem(
                 "YunearMcSdk",
-                "YunearMcSdkClient",
+                "%sClient" % self.mod.__class__.__name__,
                 "yunear_mc_sdk.client.yunear_mc_sdk_client.YunearMcSdkClient",
             )
             for attr_name in dir(self.mod):
